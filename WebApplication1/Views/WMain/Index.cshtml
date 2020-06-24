@@ -1,0 +1,1592 @@
+﻿@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_LayoutWomen.cshtml";
+}
+
+<div id="ts-home"></div>
+<div class="main-holder">
+    <div id="page" class="hfeed site">
+        <header id="masthead" class=" ts-header-style-classic ts-header-overlay themestek-main-menu-total-6">
+            <div class="ts-header-block  ts-mmenu-active-color-custom ts-dmenu-active-color-custom ts-dmenu-sep-white">
+
+                <div class="ts-search-overlay">
+                    <div class="ts-search-outer">
+                        <div class="ts-search-logo">
+                            <img src="~/Webcontent/wp-content/uploads/sites/3/2018/06/logo-searchbg.png" alt="Optico Demo2">
+                        </div>
+                        <div class="ts-icon-close"></div>
+                        <form method="get" class="ts-site-searchform" action="#">
+                            <input type="search" class="field searchform-s" name="s" placeholder="Type Word Then Enter">
+                            <button type="submit"><span class="ts-optico-icon-search"></span></button>
+                        </form>
+                    </div>
+                </div>
+                <div id="ts-stickable-header-w-main" class="ts-stickable-header-w-main">
+
+                    <div class="themestek-pre-header-wrapper ts-bgcolor-white ts-textcolor-white">
+                        <div class="themestek-pre-header-inner">
+                            <div class="container">
+                                <div class="ts-table ts-pre-header-content">
+                                    <div class="ts-table-cell">
+                                        <ul class="top-contact">
+                                            <li>
+                                                <i class="ts-optico-icon-location-pin"></i>New Rajendra Nagar
+                                                Raipur (C.G)
+                                            </li>
+                                        </ul>
+                                    </div><div class="ts-table-cell ts-align-right">
+                                        <ul class="top-contact ts-highlight"><li><i class="ti-time"></i>Mon - Sat 8.00 - 18.00</li></ul><div class="ts-last-sep-none">
+                                            <div class="themestek-social-links-wrapper">
+                                                <ul class="social-icons">
+                                                    <li class="ts-social-facebook"><a class=" tooltip-top" target="_blank" href="#"><i class="ts-optico-icon-facebook"></i></a></li>
+                                                    <li class="ts-social-twitter"><a class=" tooltip-top" target="_blank" href="#"><i class="ts-optico-icon-twitter"></i></a></li>
+                                                    <li class="ts-social-flickr"><a class=" tooltip-top" target="_blank" href="#"><i class="ts-optico-icon-flickr"></i></a></li>
+                                                    <li class="ts-social-linkedin"><a class=" tooltip-top" target="_blank" href=""><i class="ts-optico-icon-linkedin"></i></a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="ts-stickable-header-w" class="ts-stickable-header-w ts-bgcolor-custom" style="height:100px">
+                        <div id="site-header" class="site-header ts-bgcolor-custom ts-sticky-bgcolor-skincolor ts-responsive-icon-white ts-header-menu-position-center ts-mmmenu-override-yes ts-above-content-yes  ts-stickable-header">
+
+                            <div class="site-header-main ts-table container">
+                                <div class="site-branding ts-table-cell">
+                                    <div class="headerlogo themestek-logotype-image ts-stickylogo-no"><span class="site-title"><a class="home-link" href="../index.htm" title="Optico Demo2"><span class="ts-sc-logo ts-sc-logo-type-image"><img class="themestek-logo-img standardlogo" alt="Optico Demo2" src="~/Webcontent/wp-content/themes/optico/images/sbhlogo.png"></span></a></span><h2 class="site-description">Optometrist WordPress theme</h2></div>
+                                </div><!-- .site-branding -->
+                                <div id="site-header-menu" class="site-header-menu ts-table-cell">
+                                    <nav id="site-navigation" class="main-navigation" aria-label="Primary Menu" data-sticky-height="70">
+                                        <div class="ts-header-text-area">
+                                            <div class="ts-vc_btn3-container ts-vc_btn3-inline"><a class="ts-vc_general ts-vc_btn3 ts-vc_btn3-size-md ts-vc_btn3-shape-rounded ts-vc_btn3-style-flat ts-vc_btn3-weight-yes ts-vc_btn3-color-white" href="#" title="">APPOINTMENT</a></div>
+                                        </div>										@*<div class="ts-header-icons "><span class="ts-header-icon ts-header-wc-cart-link"><a href="../cart/index.htm"><i class="ts-optico-icon-shopping-cart"></i><span class="number-cart">0</span></a></span><span class="ts-header-icon ts-header-search-link"><a href="#"><i class="ts-optico-icon-search-1"></i></a></span></div>*@
+                                        <button id="menu-toggle" class="menu-toggle">
+                                            <span class="ts-hide">Toggle menu</span><i class="ts-optico-icon-bars"></i>
+                                        </button>
+
+                                        <div class="nav-menu">
+                                            <ul id="menu-main-menu" class="nav-menu">
+                                                <li id="menu-item-5390" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-ancestor current-menu-parent menu-item-has-children menu-item-5390">
+                                                    <a href="@Url.Action("Index","WMain")">Home</a>
+
+                                                </li>
+                                                <li id="menu-item-5379" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-5379">
+                                                    <a href="#">About Us</a>
+                                                    <ul class="sub-menu">
+                                                        <li id="menu-item-5402" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5402"><a href="@Url.Action("WAbout","WMain")">SAI BABA NURSHING HOME </a></li>
+                                                        <li id="menu-item-5408" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5408"><a href="#">VISION & MISSION</a></li>
+                                                        <li id="menu-item-5419" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5419"><a href="#">INFRASTRUCTURE</a></li>
+                                                        <li id="menu-item-5395" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-5395"><a href="#">COMMUNITY</a></li>
+                                                    </ul>
+                                                </li>
+
+                                                <li id="menu-item-5380" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-5380">
+                                                    <a href="#">Services</a>
+                                                    <ul class="sub-menu">
+                                                        <li id="menu-item-5402" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5402"><a href="@Url.Action("Services","WMain")">LAPROSCOPY</a></li>
+                                                        <li id="menu-item-5408" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5408"><a href="@Url.Action("Services","WMain")">COLPOSCOPY</a></li>
+                                                        <li id="menu-item-5419" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5419"><a href="@Url.Action("Services","WMain")">HYSTEROSCOPY</a></li>
+                                                        <li id="menu-item-5395" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-5395"><a href="@Url.Action("Services","WMain")">NST MACHINE</a></li>
+
+                                                        <li id="menu-item-5402" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5402"><a href="@Url.Action("Services","WMain")">MENOPAUSE CLINIC</a></li>
+                                                        <li id="menu-item-5408" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5408"><a href="@Url.Action("Services","WMain")">BREAST CANCER TREATMENT</a></li>
+                                                        <li id="menu-item-5419" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5419"><a href="@Url.Action("Services","WMain")">MALFORMATION</a></li>
+                                                        <li id="menu-item-5395" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-5395"><a href="@Url.Action("Services","WMain")">CRYO CAUTERISTATION</a></li>
+
+                                                        <li id="menu-item-5402" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5402"><a href="@Url.Action("Services","WMain")">FOLLICULAR STUDY</a></li>
+                                                        <li id="menu-item-5408" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5408"><a href="@Url.Action("Services","WMain")">MTP AND FAMILY PLANNING</a></li>
+                                                        <li id="menu-item-5419" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5419"><a href="@Url.Action("Services","WMain")">INTRAUTERINE INSEMINATION</a></li>
+                                                        <li id="menu-item-5395" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-5395"><a href="@Url.Action("Services","WMain")">SONOGRAPHY</a></li>
+
+                                                        @*<li id="menu-item-5402" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5402"><a href="#">PATHOLOGY</a></li>
+                                                            <li id="menu-item-5408" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5408"><a href="#">AMBULANCE SERVICES</a></li>
+                                                            <li id="menu-item-5419" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5419"><a href="#">FIGHTING OUT FIBROIDS</a></li>
+                                                            <li id="menu-item-5395" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-5395"><a href="#">OVARIAN CYSTS</a></li>
+                                                            <li id="menu-item-5395" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-5395"><a href="#">COPING WITH INFERTILITY</a></li>*@
+
+                                                    </ul>
+                                                </li>
+
+                                                <li id="menu-item-5409" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5409">
+                                                    <a href="@Url.Action("Doctors","WMain")">Doctors</a>
+
+                                                </li>
+
+                                                <li id="menu-item-5391" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-5391">
+                                                    <a href="#">Extra</a>
+                                                    <ul class="sub-menu">
+                                                        <li id="menu-item-5402" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5402"><a href="#">Accommodation</a></li>
+                                                        <li id="menu-item-5408" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5408"><a href="#">TPA</a></li>
+                                                        <li id="menu-item-5408" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5408"><a href="#">360 Virtual Tour</a></li>
+                                                        <li id="menu-item-5419" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5419"><a href="#">Social</a></li>
+                                                        <li id="menu-item-5395" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-5395"><a href="#">Blog</a></li>
+                                                    </ul>
+                                                </li>
+
+
+                                                <li id="menu-item-5391" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-5391">
+                                                    <a href="#">Media</a>
+
+                                                </li>
+
+                                                <li id="menu-item-5391" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-5391">
+                                                    <a href="#">Career</a>
+
+                                                </li>
+
+                                                <li id="menu-item-5391" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-5391">
+                                                    <a href="@Url.Action("Contact","WMain")">Contact Us</a>
+                                                </li>
+
+
+
+
+                                            </ul>
+                                        </div>
+                                    </nav><!-- .main-navigation -->
+                                </div><!-- .site-header-menu -->
+                            </div><!-- .site-header-main -->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="themestek-slider-wrapper">
+                    <div class="themestek-slider-wide">
+                        <link href="https://fonts.googleapis.com/css?family=Roboto:400%2C700%2C500%7CMontserrat:300%2C700%2C400%7COpen+Sans:400" rel="stylesheet" property="stylesheet" media="all">
+                        <div id="rev_slider_2_1_wrapper" class="rev_slider_wrapper fullwidthbanner-container" data-source="gallery" style="margin:0px auto;background:transparent;padding:0px;margin-top:0px;margin-bottom:0px;">
+                            <!-- START REVOLUTION SLIDER 5.4.8.3 fullwidth mode -->
+                            <div id="rev_slider_2_1" class="rev_slider fullwidthabanner" style="display:none;" data-version="5.4.8.3">
+                                <ul>
+                                    <!-- SLIDE  -->
+                                    <li data-index="rs-2" data-transition="fade" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off" data-easein="default" data-easeout="default" data-masterspeed="300" data-thumb="https://optico.themestek.com/demo2/wp-content/uploads/sites/3/revslider/slider-3/slide01-100x50.jpg" data-rotate="0" data-saveperformance="off" data-title="Slide" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
+                                        <!-- MAIN IMAGE -->
+                                        <img src="~/Webcontent/wp-content/uploads/sites/3/revslider/slider-3/mainsiteslide02.jpg" alt="" title="Homepage 1" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="off" class="rev-slidebg" data-no-retina="">
+                                        <!-- LAYERS -->
+                                        <!-- LAYER NR. 1 -->
+                                        <div class="tp-caption   tp-resizeme rs-parallaxlevel-1" id="slide-2-layer-14" data-x="-615" data-y="-319" data-width="['none','none','none','none']" data-height="['none','none','none','none']" data-type="image" data-responsive_offset="on" data-frames='[{"delay":10,"speed":300,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]' data-textalign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 5;"><img src="~/Webcontent/wp-content/uploads/sites/3/2018/06/circle-backbg-2.png" alt="" data-ww="2400px" data-hh="1478" width="2400" height="1478" data-no-retina=""> </div>
+                                        <!-- LAYER NR. 2 -->
+                                        <div class="tp-caption   tp-resizeme" id="slide-2-layer-3" data-x="20" data-y="367" data-width="['auto','auto']" data-height="['auto','auto']" data-type="text" data-responsive_offset="on" data-frames='[{"delay":700,"split":"chars","splitdelay":0.05000000000000000277555756156289135105907917022705078125,"speed":400,"split_direction":"forward","frame":"0","from":"y:[-100%];z:0;rZ:35deg;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","to":"o:1;","ease":"Power4.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]' data-textalign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 6; white-space: nowrap; font-size: 15px; line-height: 22px; font-weight: 400; color: #ffffff; letter-spacing: 3px;font-family:Roboto;text-transform:uppercase;">
+                                            Improved Vision For An Improved Life.
+                                        </div>
+                                        <!-- LAYER NR. 3 -->
+                                        <div class="tp-caption   tp-resizeme" id="slide-2-layer-4" data-x="20" data-y="397" data-width="['auto','auto']" data-height="['auto','auto']" data-type="text" data-responsive_offset="on" data-frames='[{"delay":1990,"speed":1570,"frame":"0","from":"x:[175%];y:0px;z:0;rX:0;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:1;","mask":"x:[-100%];y:0;s:inherit;e:inherit;","to":"o:1;","ease":"Power3.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]' data-textalign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 7; white-space: nowrap; font-size: 48px; line-height: 60px; font-weight: 300; color: #ffffff; letter-spacing: -2px;font-family:Montserrat;">
+                                            WELCOME TO SAI BABA
+                                        </div>
+                                        <!-- LAYER NR. 4 -->
+                                        <div class="tp-caption   tp-resizeme" id="slide-2-layer-12" data-x="20" data-y="451" data-width="['auto','auto']" data-height="['auto','auto']" data-type="text" data-responsive_offset="on" data-frames='[{"delay":2630,"speed":1570,"frame":"0","from":"x:[-175%];y:0px;z:0;rX:0;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:1;","mask":"x:[100%];y:0;s:inherit;e:inherit;","to":"o:1;","ease":"Power3.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]' data-textalign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 8; white-space: nowrap; font-size: 48px; line-height: 60px; font-weight: 700; color: #ffffff; letter-spacing: -2px;font-family:Montserrat;">Women Hospital </div>
+                                        <!-- LAYER NR. 5 -->
+                                        <div class="tp-caption   tp-resizeme" id="slide-2-layer-6" data-x="132" data-y="565" data-width="['auto','auto']" data-height="['auto','auto']" data-type="text" data-responsive_offset="on" data-frames='[{"delay":4210,"speed":1030,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]' data-textalign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 9; white-space: nowrap; font-size: 15px; line-height: 22px; font-weight: 400; color: #ffffff; letter-spacing: 2px;font-family:Montserrat;">Watch this video to know how! </div>
+                                        <!-- LAYER NR. 6 -->
+                                        <div class="tp-caption tp-shape tp-shapewrapper  tp-resizeme" id="slide-2-layer-9" data-x="18" data-y="528" data-width="['100','100']" data-height="['100','100']" data-type="shape" data-responsive_offset="on" data-frames='[{"delay":3840,"speed":300,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]' data-textalign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 10;background-color:rgba(255,255,255,0.5);border-radius:50% 50% 50% 50%;">
+                                            <div class="rs-looped rs-pulse" data-easing="Power4.easeInOut" data-speed="1" data-zoomstart="0.5" data-zoomend="1"> </div>
+                                        </div>
+                                        <!-- LAYER NR. 7 -->
+                                        <a class="tp-caption tp-shape tp-shapewrapper  tp-resizeme  lightboxvid" href="https://www.youtube.com/watch?v=73C9_SD-1mo?rel=0&autoplay=0&controls=0&showinfo=0" target="_self" id="slide-2-layer-10" data-x="28" data-y="537" data-width="['80','80']" data-height="['80','80']" data-type="shape" data-actions='' data-responsive_offset="on" data-frames='[{"delay":3850,"speed":300,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]' data-textalign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 11;background-color:rgb(255,255,255);border-radius:50% 50% 50% 50%;text-decoration: none;"> </a>
+                                        <!-- LAYER NR. 8 -->
+                                        <a class="tp-caption   tp-resizeme  lightboxvid" href="https://www.youtube.com/watch?v=73C9_SD-1mo?rel=0&autoplay=0&controls=0&showinfo=0" target="_self" id="slide-2-layer-11" data-x="64" data-y="567" data-width="['auto','auto']" data-height="['auto','auto']" data-type="text" data-actions='' data-responsive_offset="on" data-frames='[{"delay":3860,"speed":300,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]' data-textalign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 12; white-space: nowrap; font-size: 18px; line-height: 22px; font-weight: 400; color: #222222; letter-spacing: 0px;font-family:Open Sans;text-decoration: none;"><i class="fa-icon-play"></i> </a>
+                                    </li>
+                                    <!-- SLIDE  -->
+                                    <li data-index="rs-3" data-transition="fade" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off" data-easein="default" data-easeout="default" data-masterspeed="300" data-thumb="https://optico.themestek.com/demo2/wp-content/uploads/sites/3/revslider/slider-3/slide01-100x50.jpg" data-rotate="0" data-saveperformance="off" data-title="Slide" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
+                                        <!-- MAIN IMAGE -->
+                                        <img src="~/Webcontent/wp-content/uploads/sites/3/revslider/slider-3/mainsiteslide02.jpg" alt="" title="Homepage 1" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="off" class="rev-slidebg" data-no-retina="">
+                                        <!-- LAYERS -->
+                                        <!-- LAYER NR. 9 -->
+                                        <div class="tp-caption tp-shape tp-shapewrapper  tp-resizeme" id="slide-3-layer-14" data-x="-492" data-y="" data-width="['2500']" data-height="['950']" data-type="shape" data-responsive_offset="on" data-frames='[{"delay":10,"speed":300,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]' data-textalign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 5;background-color:rgba(126,197,62,0.8);"> </div>
+                                        <!-- LAYER NR. 10 -->
+                                        <div class="tp-caption   tp-resizeme" id="slide-3-layer-3" data-x="20" data-y="425" data-width="['auto']" data-height="['auto']" data-type="text" data-responsive_offset="on" data-frames='[{"delay":1340,"split":"chars","splitdelay":0.05000000000000000277555756156289135105907917022705078125,"speed":490,"split_direction":"forward","frame":"0","from":"y:[-100%];z:0;rZ:35deg;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","to":"o:1;","ease":"Power4.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]' data-textalign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 6; white-space: nowrap; font-size: 14px; line-height: 22px; font-weight: 700; color: #ffffff; letter-spacing: 7px;font-family:Roboto;text-transform:uppercase;">Welcome to Sai Baba Women Hospital </div>
+                                        <!-- LAYER NR. 11 -->
+                                        <div class="tp-caption   tp-resizeme" id="slide-3-layer-4" data-x="20" data-y="447" data-width="['auto']" data-height="['auto']" data-type="text" data-responsive_offset="on" data-frames='[{"delay":2590,"speed":1570,"frame":"0","from":"x:[175%];y:0px;z:0;rX:0;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:1;","mask":"x:[-100%];y:0;s:inherit;e:inherit;","to":"o:1;","ease":"Power3.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]' data-textalign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 7; white-space: nowrap; font-size: 48px; line-height: 60px; font-weight: 300; color: #ffffff; letter-spacing: -2px;font-family:Montserrat;">One stop destination  </div>
+                                        <!-- LAYER NR. 12 -->
+                                        <div class="tp-caption   tp-resizeme" id="slide-3-layer-12" data-x="20" data-y="498" data-width="['auto']" data-height="['auto']" data-type="text" data-responsive_offset="on" data-frames='[{"delay":3500,"speed":1570,"frame":"0","from":"x:[-175%];y:0px;z:0;rX:0;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:1;","mask":"x:[100%];y:0;s:inherit;e:inherit;","to":"o:1;","ease":"Power3.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]' data-textalign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 8; white-space: nowrap; font-size: 48px; line-height: 60px; font-weight: 700; color: #ffffff; letter-spacing: -2px;font-family:Montserrat;">for all women care needs. </div>
+                                        <!-- LAYER NR. 13 -->
+                                        @*<div class="tp-caption   tp-resizeme" id="slide-3-layer-15" data-x="584" data-y="468" data-width="['none','none','none','none']" data-height="['none','none','none','none']" data-type="image" data-responsive_offset="on" data-frames='[{"delay":1020,"speed":300,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]' data-textalign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 9;"><img src="~/Webcontent/wp-content/uploads/sites/3/2018/05/slider-3img3.png" alt="" data-ww="650px" data-hh="440px" width="650" height="440" data-no-retina=""> </div>*@
+                                        <!-- LAYER NR. 14 -->
+                                        @*<div class="tp-caption   tp-resizeme" id="slide-3-layer-16" data-x="577" data-y="225" data-width="['none','none','none','none']" data-height="['none','none','none','none']" data-type="image" data-responsive_offset="on" data-frames='[{"delay":380,"speed":300,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]' data-textalign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 10;"><img src="~/Webcontent/wp-content/uploads/sites/3/2018/05/slider-3img2.png" alt="" data-ww="200px" data-hh="221px" width="200" height="221" data-no-retina=""> </div>*@
+                                        <!-- LAYER NR. 15 -->
+                                        <div class="tp-caption   tp-resizeme rs-parallaxlevel-1" id="slide-3-layer-18" data-x="669" data-y="226" data-width="['none','none','none','none']" data-height="['none','none','none','none']" data-type="image" data-responsive_offset="on" data-frames='[{"delay":1010,"speed":300,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]' data-textalign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 11;">
+                                        <img src="~/Webcontent/wp-content/uploads/sites/3/2018/05/slider-3img-new.png" alt="" data-ww="470px" data-hh="693px" width="470" height="693" data-no-retina="">
+                                        </div>
+                                        <!-- LAYER NR. 16 -->
+                                        @*<div class="tp-caption rev-btn  tp-resizeme" id="slide-3-layer-20" data-x="20" data-y="581" data-width="['auto']" data-height="['auto']" data-type="button" data-responsive_offset="on" data-frames='[{"delay":5100,"speed":300,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"},{"frame":"hover","speed":"0","ease":"Linear.easeNone","to":"o:1;rX:0;rY:0;rZ:0;z:0;","style":"c:rgb(66,70,78);bg:rgba(255,255,255,1);bw:2 2 2 2;"}]' data-textalign="['inherit','inherit','inherit','inherit']" data-paddingtop="[12,12,12,12]" data-paddingright="[35,35,35,35]" data-paddingbottom="[12,12,12,12]" data-paddingleft="[35,35,35,35]" style="z-index: 12; white-space: nowrap; font-size: 17px; line-height: 17px; font-weight: 500; color: #ffffff; letter-spacing: px;font-family:Roboto;background-color:rgba(0,0,0,0);border-color:rgb(255,255,255);border-style:solid;border-width:2px 2px 2px 2px;border-radius:3px 3px 3px 3px;outline:none;box-shadow:none;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;cursor:pointer;">Read More </div>*@
+                                    </li>
+                                </ul>
+                                <script>
+                                    var htmlDiv=document.getElementById("rs-plugin-settings-inline-css"); var htmlDivCss="";
+                                    if(htmlDiv) {
+                                        htmlDiv.innerHTML=htmlDiv.innerHTML+htmlDivCss;
+                                    } else {
+                                        var htmlDiv=document.createElement("div");
+                                        htmlDiv.innerHTML="<style>"+htmlDivCss+"</style>";
+                                        document.getElementsByTagName("head")[0].appendChild(htmlDiv.childNodes[0]);
+                                    }
+                                </script>
+                                <div class="tp-bannertimer tp-bottom" style="visibility: hidden !important;"></div>
+                            </div>
+                            <script>
+                                var htmlDiv=document.getElementById("rs-plugin-settings-inline-css"); var htmlDivCss="";
+                                if(htmlDiv) {
+                                    htmlDiv.innerHTML=htmlDiv.innerHTML+htmlDivCss;
+                                } else {
+                                    var htmlDiv=document.createElement("div");
+                                    htmlDiv.innerHTML="<style>"+htmlDivCss+"</style>";
+                                    document.getElementsByTagName("head")[0].appendChild(htmlDiv.childNodes[0]);
+                                }
+                            </script>
+                            <script>
+                                if(setREVStartSize!==undefined) setREVStartSize(
+                                    { c: '#rev_slider_2_1',gridwidth: [1140],gridheight: [900],sliderLayout: 'fullwidth' });
+
+                                var revapi2,
+                                    tpj;
+                                (function() {
+                                    if(!/loaded|interactive|complete/.test(document.readyState)) document.addEventListener("DOMContentLoaded",onLoad); else onLoad();
+                                    function onLoad() {
+                                        if(tpj===undefined) { tpj=jQuery; if("off"=="on") tpj.noConflict(); }
+                                        if(tpj("#rev_slider_2_1").revolution==undefined) {
+                                            revslider_showDoubleJqueryError("#rev_slider_2_1");
+                                        } else {
+                                            revapi2=tpj("#rev_slider_2_1").show().revolution({
+                                                sliderType: "standard",
+                                                jsFileLocation: "//optico.themestek.com/demo2/wp-content/plugins/revslider/public/assets/js/",
+                                                sliderLayout: "fullwidth",
+                                                dottedOverlay: "none",
+                                                delay: 9000,
+                                                navigation: {
+                                                    keyboardNavigation: "off",
+                                                    keyboard_direction: "horizontal",
+                                                    mouseScrollNavigation: "off",
+                                                    mouseScrollReverse: "default",
+                                                    onHoverStop: "off",
+                                                    arrows: {
+                                                        style: "hesperiden",
+                                                        enable: true,
+                                                        hide_onmobile: false,
+                                                        hide_onleave: false,
+                                                        tmp: '',
+                                                        left: {
+                                                            h_align: "left",
+                                                            v_align: "center",
+                                                            h_offset: 20,
+                                                            v_offset: 0
+                                                        },
+                                                        right: {
+                                                            h_align: "right",
+                                                            v_align: "center",
+                                                            h_offset: 20,
+                                                            v_offset: 0
+                                                        }
+                                                    }
+                                                },
+                                                visibilityLevels: [1240,1024,778,480],
+                                                gridwidth: 1140,
+                                                gridheight: 900,
+                                                lazyType: "none",
+                                                parallax: {
+                                                    type: "mouse",
+                                                    origo: "enterpoint",
+                                                    speed: 400,
+                                                    speedbg: 0,
+                                                    speedls: 0,
+                                                    levels: [5,10,15,20,25,30,35,40,45,46,47,48,49,50,51,55],
+                                                    disable_onmobile: "on"
+                                                },
+                                                shadow: 0,
+                                                spinner: "spinner0",
+                                                stopLoop: "off",
+                                                stopAfterLoops: -1,
+                                                stopAtSlide: -1,
+                                                shuffle: "off",
+                                                autoHeight: "off",
+                                                disableProgressBar: "on",
+                                                hideThumbsOnMobile: "off",
+                                                hideSliderAtLimit: 0,
+                                                hideCaptionAtLimit: 0,
+                                                hideAllCaptionAtLilmit: 0,
+                                                debugMode: false,
+                                                fallbacks: {
+                                                    simplifyAll: "off",
+                                                    nextSlideOnWindowFocus: "off",
+                                                    disableFocusListener: false,
+                                                }
+                                            });
+                                        }; /* END OF revapi call */
+
+                                    }; /* END OF ON LOAD FUNCTION */
+                                }()); /* END OF WRAPPING FUNCTION */
+                            </script>
+                            <script>
+                                var htmlDivCss=unescape(".hesperiden.tparrows%20%7B%0A%09cursor%3Apointer%3B%0A%09background%3Argba%280%2C0%2C0%2C0.5%29%3B%0A%09width%3A40px%3B%0A%09height%3A40px%3B%0A%09position%3Aabsolute%3B%0A%09display%3Ablock%3B%0A%09z-index%3A100%3B%0A%20%20%20%20border-radius%3A%2050%25%3B%0A%7D%0A.hesperiden.tparrows%3Ahover%20%7B%0A%09background%3Argba%280%2C%200%2C%200%2C%201%29%3B%0A%7D%0A.hesperiden.tparrows%3Abefore%20%7B%0A%09font-family%3A%20%22revicons%22%3B%0A%09font-size%3A20px%3B%0A%09color%3Argb%28255%2C%20255%2C%20255%29%3B%0A%09display%3Ablock%3B%0A%09line-height%3A%2040px%3B%0A%09text-align%3A%20center%3B%0A%7D%0A.hesperiden.tparrows.tp-leftarrow%3Abefore%20%7B%0A%09content%3A%20%22%5Ce82c%22%3B%0A%20%20%20%20margin-left%3A-3px%3B%0A%7D%0A.hesperiden.tparrows.tp-rightarrow%3Abefore%20%7B%0A%09content%3A%20%22%5Ce82d%22%3B%0A%20%20%20%20margin-right%3A-3px%3B%0A%7D%0A");
+                                var htmlDiv=document.getElementById('rs-plugin-settings-inline-css');
+                                if(htmlDiv) {
+                                    htmlDiv.innerHTML=htmlDiv.innerHTML+htmlDivCss;
+                                }
+                                else {
+                                    var htmlDiv=document.createElement('div');
+                                    htmlDiv.innerHTML='<style>'+htmlDivCss+'</style>';
+                                    document.getElementsByTagName('head')[0].appendChild(htmlDiv.childNodes[0]);
+                                }
+                            </script>
+                        </div><!-- END REVOLUTION SLIDER -->
+                    </div>
+                </div>
+            </div>
+        </header><!-- .site-header -->
+        <div id="content-wrapper" class="site-content-wrapper">
+
+            <div id="content" class="site-content ">
+                <div id="content-inner" class="site-content-inner ">
+
+                    <div id="primary" class="content-area  ">
+                        <main id="main" class="site-main">
+
+                            <article id="post-5" class="post-5 page type-page status-publish hentry">
+
+                                <header class="single-entry-header ts-hide">
+                                    <h2 class="entry-title">Homepage 1</h2>
+                                </header><!-- .entry-header -->
+                                <div class="entry-content">
+                                    <div data-vc-full-width="true" data-vc-full-width-init="false" class="ts-row wpb_row vc_row-fluid vc_custom_1524308732616 ts-bgcolor-grey ts-bgimage-position-center_center">
+
+                                        <div class="vc_row container">
+
+                                            <div class="ts-column wpb_column vc_column_container vc_col-sm-12">
+                                                <div class="vc_column-inner  ">
+                                                    <div class="wpb_wrapper">
+
+                                                        <div class="ts-row-inner vc_row wpb_row vc_inner vc_row-fluid box-shadow-2 ts-no-gutter ts-box-seprator vc_custom_1529068966778 ts-responsive-custom-17234251 vc_row-o-equal-height vc_row-flex ts-bgcolor-white">
+
+                                                            <div class="ts-column-inner wpb_column vc_column_container vc_col-sm-3">
+                                                                <div class="vc_column-inner  ">
+
+                                                                    <div class="wpb_wrapper">
+
+                                                                        <div class="ts-servicebox ts-servicebox-style-1 ts-sbox-style-1 ts-sbox-itype-icon ts-sbox-hoverstyle-1">
+                                                                            <div class="ts-sbox-icon ts-large-icon ts-icon-skincolor">
+                                                                                <div class="ts-sbox-icon-wrapper"><i class="tsoptmicon flaticon-eye"></i></div>
+                                                                            </div>
+                                                                            <div class="ts-sbox-contents">
+                                                                                <div class="ts-vc_general ts-vc_cta3 ts-cta3-only ts-vc_cta3-style-classic ts-vc_cta3-shape-rounded ts-vc_cta3-align-left ts-vc_cta3-color-transparent ts-vc_cta3-icon-size-md ts-vc_cta3-actions-no ts-cta3-with-desc">
+                                                                                    <div class="ts-vc_cta3_content-container">
+                                                                                        <div class="ts-vc_cta3-content">
+                                                                                            <div class="ts-vc_cta3-content-header ts-wrap">
+                                                                                                <div class="ts-vc_cta3-headers ts-wrap-cell">
+                                                                                                    <h2 class="ts-custom-heading ">Women care</h2>
+                                                                                                </div>
+                                                                                            </div><div class="ts-cta3-content-wrapper"><p>Enhancing Your Vision sit ametcon sec tetur adipisicing eiusmod tempor incididunt ut. </p></div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div><!-- .ts-sbox-contents -->
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="ts-column-inner wpb_column vc_column_container vc_col-sm-3">
+                                                                <div class="vc_column-inner  ">
+
+                                                                    <div class="wpb_wrapper">
+
+                                                                        <div class="ts-servicebox ts-servicebox-style-1 ts-sbox-style-1 ts-sbox-itype-icon ts-sbox-hoverstyle-1">
+                                                                            <div class="ts-sbox-icon ts-large-icon ts-icon-skincolor">
+                                                                                <div class="ts-sbox-icon-wrapper"><i class="tsoptmicon flaticon-testing-glasses"></i></div>
+                                                                            </div>
+                                                                            <div class="ts-sbox-contents">
+                                                                                <div class="ts-vc_general ts-vc_cta3 ts-cta3-only ts-vc_cta3-style-classic ts-vc_cta3-shape-rounded ts-vc_cta3-align-left ts-vc_cta3-color-transparent ts-vc_cta3-icon-size-md ts-vc_cta3-actions-no ts-cta3-with-desc">
+                                                                                    <div class="ts-vc_cta3_content-container">
+                                                                                        <div class="ts-vc_cta3-content">
+                                                                                            <div class="ts-vc_cta3-content-header ts-wrap">
+                                                                                                <div class="ts-vc_cta3-headers ts-wrap-cell">
+                                                                                                    <h2 class="ts-custom-heading ">Laproscopy</h2>
+                                                                                                </div>
+                                                                                            </div><div class="ts-cta3-content-wrapper"><p>Caring Your Eyes is important sec tetur adipisicing elit, sed do important sec tetur adipisicing.</p></div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div><!-- .ts-sbox-contents -->
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="ts-column-inner wpb_column vc_column_container vc_col-sm-3">
+                                                                <div class="vc_column-inner  ">
+
+                                                                    <div class="wpb_wrapper">
+
+                                                                        <div class="ts-servicebox ts-servicebox-style-1 ts-sbox-style-1 ts-sbox-itype-icon ts-sbox-hoverstyle-1">
+                                                                            <div class="ts-sbox-icon ts-large-icon ts-icon-skincolor">
+                                                                                <div class="ts-sbox-icon-wrapper"><i class="tsoptmicon flaticon-glasses"></i></div>
+                                                                            </div>
+                                                                            <div class="ts-sbox-contents">
+                                                                                <div class="ts-vc_general ts-vc_cta3 ts-cta3-only ts-vc_cta3-style-classic ts-vc_cta3-shape-rounded ts-vc_cta3-align-left ts-vc_cta3-color-transparent ts-vc_cta3-icon-size-md ts-vc_cta3-actions-no ts-cta3-with-desc">
+                                                                                    <div class="ts-vc_cta3_content-container">
+                                                                                        <div class="ts-vc_cta3-content">
+                                                                                            <div class="ts-vc_cta3-content-header ts-wrap">
+                                                                                                <div class="ts-vc_cta3-headers ts-wrap-cell">
+                                                                                                    <h2 class="ts-custom-heading ">Colposcopy</h2>
+                                                                                                </div>
+                                                                                            </div><div class="ts-cta3-content-wrapper"><p>Keep calm dolor sit ametcon sec tetur adipisicing elit, sed do eiusmod tempor incididunt ut. </p></div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div><!-- .ts-sbox-contents -->
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="ts-column-inner wpb_column vc_column_container vc_col-sm-3">
+                                                                <div class="vc_column-inner  ">
+
+                                                                    <div class="wpb_wrapper">
+
+                                                                        <div class="ts-servicebox ts-servicebox-style-1 ts-sbox-style-1 ts-sbox-itype-icon ts-sbox-hoverstyle-1">
+                                                                            <div class="ts-sbox-icon ts-large-icon ts-icon-skincolor">
+                                                                                <div class="ts-sbox-icon-wrapper"><i class="tsoptmicon flaticon-contact-lens-3"></i></div>
+                                                                            </div>
+                                                                            <div class="ts-sbox-contents">
+                                                                                <div class="ts-vc_general ts-vc_cta3 ts-cta3-only ts-vc_cta3-style-classic ts-vc_cta3-shape-rounded ts-vc_cta3-align-left ts-vc_cta3-color-transparent ts-vc_cta3-icon-size-md ts-vc_cta3-actions-no ts-cta3-with-desc">
+                                                                                    <div class="ts-vc_cta3_content-container">
+                                                                                        <div class="ts-vc_cta3-content">
+                                                                                            <div class="ts-vc_cta3-content-header ts-wrap">
+                                                                                                <div class="ts-vc_cta3-headers ts-wrap-cell">
+                                                                                                    <h2 class="ts-custom-heading ">Free Consult?</h2>
+                                                                                                </div>
+                                                                                            </div><div class="ts-cta3-content-wrapper"><p>Enhancing Your Vision ametcon sec tetur adipisicing looking sit ametcon sec tetur adipisicing.</p></div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div><!-- .ts-sbox-contents -->
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="vc_row-full-width vc_clearfix"></div>
+                                    <div data-vc-full-width="true" data-vc-full-width-init="false" class="ts-row wpb_row vc_row-fluid vc_custom_1526988745660 ts-responsive-custom-97835313 ts-bgcolor-grey ts-bgimage-position-center_center">
+
+                                        <div class="vc_row container">
+
+                                            <div class="ts-column wpb_column vc_column_container vc_col-sm-6">
+                                                <div class="vc_column-inner  ">
+                                                    <div class="wpb_wrapper">
+
+                                                        <div class="wpb_single_image wpb_content_element vc_align_left  vc_custom_1526209349548">
+
+                                                            <figure class="wpb_wrapper vc_figure">
+                                                                @*<div class="vc_single_image-wrapper   vc_box_border_grey"><img width="582" height="585" src="~/Webcontent/wp-content/uploads/sites/3/2018/05/img-01-new.png" class="vc_single_image-img attachment-full" alt="" srcset="~/Webcontent/wp-content/uploads/sites/3/2018/05/img-01-new.png 582w,~/Webcontent/wp-content/uploads/sites/3/2018/05/img-01-new-150x150.png 150w, ~/Webcontent/wp-content/uploads/sites/3/2018/05/img-01-new-298x300.png 298w" sizes="(max-width: 582px) 100vw, 582px" data-id="4522"></div>*@
+                                                                <div class="vc_single_image-wrapper vc_box_border_grey"><img width="582" height="585" src="~/Webcontent/saibabamain.jpg" class="vc_single_image-img attachment-full" alt="" srcset="~/Webcontent/saibabamain.jpg 582w,~/Webcontent/wp-content/uploads/sites/3/2018/05/img-01-new-150x150.png 150w, ~/Webcontent/wp-content/uploads/sites/3/2018/05/img-01-new-298x300.png 298w" sizes="(max-width: 582px) 100vw, 582px" data-id="4522"></div>
+                                                                @*<img src="~/Webcontent/wp-content/themes/optico/images/saibabaeyehospital.jpg" />*@
+                                                            </figure>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="ts-column wpb_column vc_column_container vc_col-sm-6">
+                                                <div class="vc_column-inner vc_custom_1527068636634 ts-responsive-custom-30016854">
+                                                    <div class="wpb_wrapper">
+                                                        <div class="ts-element-heading-wrapper ts-heading-inner ts-element-align-left ts-seperator-none ">
+                                                            <section class="ts-vc_cta3-container" style="margin-top:-70px;">
+                                                                <div class="ts-vc_general ts-vc_cta3 ts-cta3-only ts-vc_cta3-style-classic ts-vc_cta3-shape-rounded ts-vc_cta3-align-left ts-vc_cta3-color-transparent ts-vc_cta3-icon-size-md ts-vc_cta3-actions-no ts-cta3-without-desc">
+                                                                    <div class="ts-vc_cta3_content-container">
+                                                                        <div class="ts-vc_cta3-content">
+                                                                            <div class="ts-vc_cta3-content-header ts-wrap">
+                                                                                <div class="ts-vc_cta3-headers ts-wrap-cell">
+                                                                                    <h4 class="ts-custom-heading ">WELCOME TO SAI BABA WOMEN HOSPITAL </h4>
+                                                                                    <h2 class="ts-custom-heading ">WE PRESERVE, ENHANCE, AND <strong>PROTECT YOUR Life</strong></h2>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </section>
+                                                        </div> <!-- .ts-element-heading-wrapper container -->
+                                                        <div class="wpb_text_column wpb_content_element " style="margin-top:-30px;">
+                                                            <div class="wpb_wrapper">
+                                                                <p style="text-align:justify">
+                                                                    Sai Baba Nursing Home was started in the year 2003. It has now become a leading private Hospital of
+                                                                    Chhattisgarh. Sai Baba Nursing Home is providing the complete care for the Women. Giving standard treatment as
+                                                                    well as advanced medical and surgical treatment and high-tech equipment with back-up round the clock Doctors,
+                                                                    qualified work force and proficient consultants. We believe in providing best care in most affordable price.
+                                                                    <br />
+                                                                    We provide specialist medical as well as surgical management of all types of gynaecological problem i.e menstrual abnormalities , Prolapse,
+                                                                    fibroid and other tumors of uterus and ovary, pelvic inflammatory disease , tubal recanalisation by micro surgery.
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="vc_empty_space" style="height: 10px"><span class="vc_empty_space_inner"></span></div>
+                                                        <div class="ts-row-inner vc_row wpb_row vc_inner vc_row-fluid ts-col-auto">
+
+                                                            <div class="ts-column-inner wpb_column vc_column_container vc_col-sm-6">
+                                                                <div class="vc_column-inner  ">
+
+                                                                    <div class="wpb_wrapper">
+
+                                                                        @*<div class="wpb_single_image wpb_content_element vc_align_left">
+
+                                                                                <figure class="wpb_wrapper vc_figure">
+                                                                                    <div class="vc_single_image-wrapper   vc_box_border_grey"><img width="124" height="82" src="~/Webcontent/wp-content/uploads/sites/3/2018/06/signature.png" class="vc_single_image-img attachment-full" alt="" data-id="5214"></div>
+                                                                                </figure>
+                                                                            </div>*@
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="vc_row-full-width vc_clearfix"></div>
+                                    <br />
+                                    <br /><br />
+
+                                    <div class="ts-row wpb_row vc_row-fluid ts-overlap-row-section vc_custom_1527048053803 ts-responsive-custom-79157701 ts-break-col-991 ts-break-col-custom vc_row container ts-bgimage-position-center_center">
+
+                                        <div class="vc_row-o-equal-height vc_row-flex">
+
+                                            <div class="ts-column wpb_column vc_column_container vc_col-sm-6">
+                                                <div class="vc_column-inner vc_custom_1525511919249 ">
+                                                    <div class="wpb_wrapper">
+                                                        <div class="ts-element-heading-wrapper ts-heading-inner ts-element-align-left ts-seperator-none  vc_custom_1527567312589">
+                                                            <section class="ts-vc_cta3-container">
+                                                                <div class="ts-vc_general ts-vc_cta3 ts-cta3-only ts-vc_cta3-style-classic ts-vc_cta3-shape-rounded ts-vc_cta3-align-left ts-vc_cta3-color-transparent ts-vc_cta3-icon-size-md ts-vc_cta3-actions-no ts-cta3-with-desc">
+                                                                    <div class="ts-vc_cta3_content-container">
+                                                                        <div class="ts-vc_cta3-content">
+                                                                            <div class="ts-vc_cta3-content-header ts-wrap">
+                                                                                <div class="ts-vc_cta3-headers ts-wrap-cell">
+                                                                                    <h4 class="ts-custom-heading ">YOUR VISION IS OUR VISION</h4>
+                                                                                    <h2 class="ts-custom-heading ">NOT JUST CARE, BUT <strong> A BETTER CARE EXPERIENCE</strong></h2>
+                                                                                </div>
+                                                                            </div><div class="ts-cta3-content-wrapper"><p>Eyecare Photoshop&#8217;s version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctornisi elit consequat ipsum.</p></div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </section>
+                                                        </div> <!-- .ts-element-heading-wrapper container -->
+                                                        <div class="ts-row-inner vc_row wpb_row vc_inner vc_row-fluid">
+
+                                                            <div class="ts-column-inner wpb_column vc_column_container vc_col-sm-6">
+                                                                <div class="vc_column-inner  ">
+
+                                                                    <div class="wpb_wrapper">
+
+                                                                        <div class="ts-servicebox ts-sbox-style-2 ts-sbox-itype-icon">
+                                                                            <div class="ts-sbox-icon">
+                                                                                <div class="ts-sbox-icon-wrapper"><i class="fa fa-thumbs-o-up"></i></div>
+                                                                            </div>
+                                                                            <div class="ts-sbox-contents">
+                                                                                <div class="ts-vc_general ts-vc_cta3 ts-cta3-only ts-vc_cta3-style-classic ts-vc_cta3-shape-rounded ts-vc_cta3-align-left ts-vc_cta3-color-transparent ts-vc_cta3-icon-size-md ts-vc_cta3-actions-no ts-cta3-with-desc">
+                                                                                    <div class="ts-vc_cta3_content-container">
+                                                                                        <div class="ts-vc_cta3-content">
+                                                                                            <div class="ts-vc_cta3-content-header ts-wrap">
+                                                                                                <div class="ts-vc_cta3-headers ts-wrap-cell">
+                                                                                                    <h2 class="ts-custom-heading ">Qualified Doctors</h2>
+                                                                                                </div>
+                                                                                            </div><div class="ts-cta3-content-wrapper"><p>Enhancing Your Vision sit dolor sitametcon sec tetur adipisicing.</p></div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div><!-- .ts-sbox-contents -->
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="ts-column-inner wpb_column vc_column_container vc_col-sm-6">
+                                                                <div class="vc_column-inner  ">
+
+                                                                    <div class="wpb_wrapper">
+
+                                                                        <div class="ts-servicebox ts-sbox-style-2 ts-sbox-itype-icon">
+                                                                            <div class="ts-sbox-icon">
+                                                                                <div class="ts-sbox-icon-wrapper"><i class="fa fa-thumbs-o-up"></i></div>
+                                                                            </div>
+                                                                            <div class="ts-sbox-contents">
+                                                                                <div class="ts-vc_general ts-vc_cta3 ts-cta3-only ts-vc_cta3-style-classic ts-vc_cta3-shape-rounded ts-vc_cta3-align-left ts-vc_cta3-color-transparent ts-vc_cta3-icon-size-md ts-vc_cta3-actions-no ts-cta3-with-desc">
+                                                                                    <div class="ts-vc_cta3_content-container">
+                                                                                        <div class="ts-vc_cta3-content">
+                                                                                            <div class="ts-vc_cta3-content-header ts-wrap">
+                                                                                                <div class="ts-vc_cta3-headers ts-wrap-cell">
+                                                                                                    <h2 class="ts-custom-heading ">Modern Equipment</h2>
+                                                                                                </div>
+                                                                                            </div><div class="ts-cta3-content-wrapper"><p>Wake Up with dolor sit ametcon sec tetur adipisicing elit,sed do.</p></div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div><!-- .ts-sbox-contents -->
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="ts-row-inner vc_row wpb_row vc_inner vc_row-fluid vc_custom_1524030500650">
+
+                                                            <div class="ts-column-inner wpb_column vc_column_container vc_col-sm-6">
+                                                                <div class="vc_column-inner  ">
+
+                                                                    <div class="wpb_wrapper">
+
+                                                                        <div class="ts-servicebox ts-sbox-style-2 ts-sbox-itype-icon">
+                                                                            <div class="ts-sbox-icon">
+                                                                                <div class="ts-sbox-icon-wrapper"><i class="fa fa-thumbs-o-up"></i></div>
+                                                                            </div>
+                                                                            <div class="ts-sbox-contents">
+                                                                                <div class="ts-vc_general ts-vc_cta3 ts-cta3-only ts-vc_cta3-style-classic ts-vc_cta3-shape-rounded ts-vc_cta3-align-left ts-vc_cta3-color-transparent ts-vc_cta3-icon-size-md ts-vc_cta3-actions-no ts-cta3-with-desc">
+                                                                                    <div class="ts-vc_cta3_content-container">
+                                                                                        <div class="ts-vc_cta3-content">
+                                                                                            <div class="ts-vc_cta3-content-header ts-wrap">
+                                                                                                <div class="ts-vc_cta3-headers ts-wrap-cell">
+                                                                                                    <h2 class="ts-custom-heading ">Emergency Help</h2>
+                                                                                                </div>
+                                                                                            </div><div class="ts-cta3-content-wrapper"><p>Get better looking sit ametcon sec tetur adipisicing elit,sed do.</p></div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div><!-- .ts-sbox-contents -->
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="ts-column-inner wpb_column vc_column_container vc_col-sm-6">
+                                                                <div class="vc_column-inner  ">
+
+                                                                    <div class="wpb_wrapper">
+
+                                                                        <div class="ts-servicebox ts-sbox-style-2 ts-sbox-itype-icon">
+                                                                            <div class="ts-sbox-icon">
+                                                                                <div class="ts-sbox-icon-wrapper"><i class="fa fa-thumbs-o-up"></i></div>
+                                                                            </div>
+                                                                            <div class="ts-sbox-contents">
+                                                                                <div class="ts-vc_general ts-vc_cta3 ts-cta3-only ts-vc_cta3-style-classic ts-vc_cta3-shape-rounded ts-vc_cta3-align-left ts-vc_cta3-color-transparent ts-vc_cta3-icon-size-md ts-vc_cta3-actions-no ts-cta3-with-desc">
+                                                                                    <div class="ts-vc_cta3_content-container">
+                                                                                        <div class="ts-vc_cta3-content">
+                                                                                            <div class="ts-vc_cta3-content-header ts-wrap">
+                                                                                                <div class="ts-vc_cta3-headers ts-wrap-cell">
+                                                                                                    <h2 class="ts-custom-heading ">Individual Approach</h2>
+                                                                                                </div>
+                                                                                            </div><div class="ts-cta3-content-wrapper"><p>Enhancing Your Vision ametcon sec tetur adipisicing elit,sed do.</p></div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div><!-- .ts-sbox-contents -->
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="ts-vc_btn3-container ts-vc_btn3-inline vc_custom_1527567296464"><a class="ts-vc_general ts-vc_btn3 ts-vc_btn3-size-md ts-vc_btn3-shape-rounded ts-vc_btn3-style-text ts-vc_btn3-weight-yes ts-vc_btn3-icon-right ts-vc_btn3-color-skincolor" href="" title="">Read More <i class="ts-vc_btn3-icon fa fa-arrow-circle-right"></i></a></div><div class="vc_empty_space  ts-height-auto-991" style="height: 105px"><span class="vc_empty_space_inner"></span></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="ts-column wpb_column vc_column_container vc_col-sm-6">
+                                                <div class="vc_column-inner  ts-responsive-custom-24544611 ts-break-col-1200 ts-break-col-991">
+                                                    <div class="wpb_wrapper">
+
+                                                        <div class="wpb_single_image wpb_content_element vc_align_left  vc_custom_1525514596621  imagebox-shadow">
+
+                                                            <figure class="wpb_wrapper vc_figure">
+                                                                <div class="vc_single_image-wrapper   vc_box_border_grey"><img width="550" height="730" src="~/Webcontent/wp-content/uploads/sites/3/2018/05/womencare.jpg" class="vc_single_image-img attachment-full" alt="" srcset="~/Webcontent/wp-content/uploads/sites/3/2018/05/womencare.jpg 550w, ../wp-content/uploads/sites/3/2018/05/01-226x300.jpg 226w" sizes="(max-width: 550px) 100vw, 550px" data-id="4254"></div>
+                                                            </figure>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                    <div data-vc-full-width="true" data-vc-full-width-init="false" class="ts-row wpb_row vc_row-fluid vc_custom_1529147926097 ts-responsive-custom-58931005 vc_row-has-fill ts-break-col-991 ts-overlap-row ts-bgcolor-skincolor ts-bgimage-position-center_center ts-bg ts-bgimage-yes">
+                                        <div class="ts-row-wrapper-bg-layer ts-bg-layer"></div><!-- ThemeStek custom DIV added -->
+
+                                        <div class="vc_row container">
+
+                                            <div class="ts-column wpb_column vc_column_container vc_col-sm-6">
+                                                <div class="vc_column-inner  ">
+                                                    <div class="wpb_wrapper">
+
+                                                        <div class="ts-row-inner vc_row wpb_row vc_inner vc_row-fluid ts-col-auto">
+
+                                                            <div class="ts-column-inner wpb_column vc_column_container vc_col-sm-6">
+                                                                <div class="vc_column-inner  ">
+
+                                                                    <div class="wpb_wrapper">
+                                                                        <div class="ts-vc_icon_element ts-vc_icon_element-outer ts-vc_icon_element-align-left  ts-vc_icon_element-have-style lightboxvid"><div class="ts-vc_icon_element-inner  ts-vc_icon_element-have-style-inner ts-vc_icon_element-color-black ts-vc_icon_element-size-lg ts-vc_icon_element-style-rounded ts-vc_icon_element-background ts-vc_icon_element-background-color-white"><span class="ts-vc_icon_element-icon themifyicon ti-control-play"></span><a class="ts-vc_icon_element-link" href="https://www.youtube.com/watch?v=CgeUyJErSY4" title="" target="_self"></a></div></div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="ts-column-inner wpb_column vc_column_container vc_col-sm-6">
+                                                                <div class="vc_column-inner  ">
+
+                                                                    <div class="wpb_wrapper">
+                                                                        <p style="text-align:left;color:#ffffff;" class="ts-custom-heading ts-underline-link lightboxvid vc_custom_1528022569791"><a href="https://www.youtube.com/watch?v=CgeUyJErSY4">See our video</a></p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="ts-element-heading-wrapper ts-heading-inner ts-element-align-left ts-seperator-none ">
+                                                            <section class="ts-vc_cta3-container">
+                                                                <div class="ts-vc_general ts-vc_cta3 ts-cta3-only ts-vc_cta3-style-classic ts-vc_cta3-shape-rounded ts-vc_cta3-align-left ts-vc_cta3-color-transparent ts-vc_cta3-icon-size-md ts-vc_cta3-actions-no ts-cta3-without-desc">
+                                                                    <div class="ts-vc_cta3_content-container">
+                                                                        <div class="ts-vc_cta3-content">
+                                                                            <div class="ts-vc_cta3-content-header ts-wrap">
+                                                                                <div class="ts-vc_cta3-headers ts-wrap-cell">
+                                                                                    <h4 class="ts-custom-heading ">WHY CHOOSE US</h4>
+                                                                                    <h2 class="ts-custom-heading ">Women CARE SERVICES FOR<strong> CHILDRENS AND ADULTS</strong></h2>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </section>
+                                                        </div> <!-- .ts-element-heading-wrapper container -->
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="ts-column wpb_column vc_column_container vc_col-sm-6">
+                                                <div class="vc_column-inner  ">
+                                                    <div class="wpb_wrapper">
+
+                                                        <div class="ts-row-inner vc_row wpb_row vc_inner vc_row-fluid ts-colum-col-4-767 vc_custom_1527054778594">
+
+                                                            <div class="ts-column-inner wpb_column vc_column_container vc_col-sm-4">
+                                                                <div class="vc_column-inner vc_custom_1527054751035 ">
+
+                                                                    <div class="wpb_wrapper">
+
+                                                                        <div class="ts-fid inside ts-fid-boxstyle-style2 ts-fidbox-style-2">
+                                                                            <div class="ts-fld-contents">
+                                                                                <div class="ts-circle-outer" data-digit="80" data-fill="#fff" data-before="" data-before-type="sup" data-after="&lt;sub&gt;%&lt;/sub&gt;" data-after-type="sub" data-size="145" data-emptyfill="#000301" data-thickness="7" data-gradient="">
+                                                                                    <div class="ts-circle-w">
+                                                                                        <div class="ts-circle"></div>
+                                                                                        <div class="ts-circle-overlay">
+                                                                                            <div class="ts-circle-number"></div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="ts-fid-title-w">
+                                                                                        <h3 class="ts-fid-title"><span>Expert Doctor<br></span></h3>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div><!-- .ts-fld-contents -->
+                                                                        </div>
+
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="ts-column-inner wpb_column vc_column_container vc_col-sm-4">
+                                                                <div class="vc_column-inner vc_custom_1527054757548 ">
+
+                                                                    <div class="wpb_wrapper">
+
+                                                                        <div class="ts-fid inside ts-fid-boxstyle-style2 ts-fidbox-style-2">
+                                                                            <div class="ts-fld-contents">
+                                                                                <div class="ts-circle-outer" data-digit="65" data-fill="#fff" data-before="" data-before-type="sup" data-after="&lt;sub&gt;%&lt;/sub&gt;" data-after-type="sub" data-size="145" data-emptyfill="#000301" data-thickness="7" data-gradient="">
+                                                                                    <div class="ts-circle-w">
+                                                                                        <div class="ts-circle"></div>
+                                                                                        <div class="ts-circle-overlay">
+                                                                                            <div class="ts-circle-number"></div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="ts-fid-title-w">
+                                                                                        <h3 class="ts-fid-title"><span>Quality Work<br></span></h3>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div><!-- .ts-fld-contents -->
+                                                                        </div>
+
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="ts-column-inner wpb_column vc_column_container vc_col-sm-4">
+                                                                <div class="vc_column-inner vc_custom_1527054764683 ">
+
+                                                                    <div class="wpb_wrapper">
+
+                                                                        <div class="ts-fid inside ts-fid-boxstyle-style2 ts-fidbox-style-2">
+                                                                            <div class="ts-fld-contents">
+                                                                                <div class="ts-circle-outer" data-digit="60" data-fill="#fff" data-before="" data-before-type="sup" data-after="&lt;sub&gt;%&lt;/sub&gt;" data-after-type="sub" data-size="145" data-emptyfill="#000301" data-thickness="7" data-gradient="">
+                                                                                    <div class="ts-circle-w">
+                                                                                        <div class="ts-circle"></div>
+                                                                                        <div class="ts-circle-overlay">
+                                                                                            <div class="ts-circle-number"></div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="ts-fid-title-w">
+                                                                                        <h3 class="ts-fid-title"><span>Dedicated Team<br></span></h3>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div><!-- .ts-fld-contents -->
+                                                                        </div>
+
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="vc_row-full-width vc_clearfix"></div>
+                                    <div data-vc-full-width="true" data-vc-full-width-init="false" class="ts-row wpb_row vc_row-fluid vc_custom_1525515286788 ts-bgcolor-grey ts-bgimage-position-center_center">
+
+                                        <div class="vc_row container">
+
+                                            <div class="ts-column wpb_column vc_column_container vc_col-sm-12">
+                                                <div class="vc_column-inner  ">
+                                                    <div class="wpb_wrapper">
+                                                        <div class="ts-element-heading-wrapper ts-heading-inner ts-element-align-center ts-seperator-none ">
+                                                            <section class="ts-vc_cta3-container">
+                                                                <div class="ts-vc_general ts-vc_cta3 ts-cta3-only ts-vc_cta3-style-classic ts-vc_cta3-shape-rounded ts-vc_cta3-align-center ts-vc_cta3-color-transparent ts-vc_cta3-icon-size-md ts-vc_cta3-actions-no ts-cta3-without-desc">
+                                                                    <div class="ts-vc_cta3_content-container">
+                                                                        <div class="ts-vc_cta3-content">
+                                                                            <div class="ts-vc_cta3-content-header ts-wrap">
+                                                                                <div class="ts-vc_cta3-headers ts-wrap-cell">
+                                                                                    <h4 class="ts-custom-heading ">OUR SERVICES</h4>
+                                                                                    <h2 class="ts-custom-heading ">
+                                                                                        A WIDE RANGE OF<br>
+                                                                                        <strong>QUALITY SERVICES.</strong>
+                                                                                    </h2>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </section>
+                                                        </div> <!-- .ts-element-heading-wrapper container -->
+                                                        <div class="ts-row-inner vc_row wpb_row vc_inner vc_row-fluid">
+
+                                                            <div class="ts-column-inner wpb_column vc_column_container vc_col-sm-12">
+                                                                <div class="vc_column-inner  ">
+
+                                                                    <div class="wpb_wrapper">
+                                                                        <div class="themestek-boxes themestek-boxes-portfolio themestek-boxes-view-default themestek-boxes-col-three themestek-boxes-sortable-no themestek-boxes-textalign-center themestek-boxes-sortablebutton-">
+                                                                            <div class="themestek-boxes-inner themestek-boxes-portfolio-inner ">
+
+                                                                                <div class="row multi-columns-row themestek-boxes-row-wrapper">
+                                                                                    <div class="ts-box-col-wrapper col-lg-4 col-sm-6 col-md-4 col-xs-12 glaucoma-surgery">
+                                                                                        <article class="themestek-box themestek-box-portfolio ts-portfoliobox-style-3 ts-hover-style-1 ">
+                                                                                            <div class="themestek-post-item">
+
+                                                                                                <span class="themestek-item-thumbnail">
+                                                                                                    <span class="themestek-item-thumbnail-inner">
+                                                                                                        <img width="800" height="650" src="~/Webcontent/wp-content/uploads/sites/3/2018/02/1.jpg" class="attachment-themestek-img-800x650 size-themestek-img-800x650 wp-post-image" alt="" data-id="3866">
+                                                                                                    </span>
+                                                                                                </span>		<div class="themestek-box-content">
+                                                                                                    <div class="themestek-box-content-inner">
+                                                                                                        <div class="themestek-pf-box-title">
+                                                                                                            <h3><a href="~/Webcontent//optometrist-service/paeditaric-ophthalmology/index.htm">Laproscopy</a></h3>
+                                                                                                        </div>
+                                                                                                        <div class="themestek-box-desc">
+                                                                                                            <p>If you got eyes sit ametcon sec tetur adipisicing.</p>
+                                                                                                        </div>
+
+                                                                                                        <div class="ts-vc_btn3-container ts-vc_btn3-inline">
+                                                                                                            <a class="ts-vc_general ts-vc_btn3 ts-vc_btn3-size-md ts-vc_btn3-shape-round ts-vc_btn3-weight-yes ts-vc_btn3-style-text  ts-vc_btn3-icon-right ts-vc_btn3-color-skincolor" href="#" title="Paeditaric Ophthalmology">
+                                                                                                                Read More <i class="ts-vc_btn3-icon fa fa-arrow-circle-right"></i>
+                                                                                                            </a>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </article>
+                                                                                    </div><div class="ts-box-col-wrapper col-lg-4 col-sm-6 col-md-4 col-xs-12 eye-treatment laser-eye-surgery">
+                                                                                        <article class="themestek-box themestek-box-portfolio ts-portfoliobox-style-3 ts-hover-style-1 ">
+                                                                                            <div class="themestek-post-item">
+
+                                                                                                <span class="themestek-item-thumbnail">
+                                                                                                    <span class="themestek-item-thumbnail-inner">
+                                                                                                        <img width="800" height="650" src="~/Webcontent//wp-content/uploads/sites/3/2018/02/4.jpg" class="attachment-themestek-img-800x650 size-themestek-img-800x650 wp-post-image" alt="" data-id="3861">
+                                                                                                    </span>
+                                                                                                </span>		<div class="themestek-box-content">
+                                                                                                    <div class="themestek-box-content-inner">
+                                                                                                        <div class="themestek-pf-box-title">
+                                                                                                            <h3><a href="~/Webcontent//optometrist-service/surgical-procedures/index.htm">Surgical Procedures</a></h3>
+                                                                                                        </div>
+                                                                                                        <div class="themestek-box-desc">
+                                                                                                            <p>Enhancing Your life sit ametcon sec tetur adipisicing.</p>
+                                                                                                        </div>
+
+                                                                                                        <div class="ts-vc_btn3-container ts-vc_btn3-inline">
+                                                                                                            <a class="ts-vc_general ts-vc_btn3 ts-vc_btn3-size-md ts-vc_btn3-shape-round ts-vc_btn3-weight-yes ts-vc_btn3-style-text  ts-vc_btn3-icon-right ts-vc_btn3-color-skincolor" href="#" title="Surgical Procedures">
+                                                                                                                Read More <i class="ts-vc_btn3-icon fa fa-arrow-circle-right"></i>
+                                                                                                            </a>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </article>
+                                                                                    </div><div class="ts-box-col-wrapper col-lg-4 col-sm-6 col-md-4 col-xs-12 vitreo-retinal-surgery">
+                                                                                        <article class="themestek-box themestek-box-portfolio ts-portfoliobox-style-3 ts-hover-style-1 ">
+                                                                                            <div class="themestek-post-item">
+
+                                                                                                <span class="themestek-item-thumbnail">
+                                                                                                    <span class="themestek-item-thumbnail-inner">
+                                                                                                        <img width="800" height="650" src="~/Webcontent//wp-content/uploads/sites/3/2018/02/5.jpg" class="attachment-themestek-img-800x650 size-themestek-img-800x650 wp-post-image" alt="" data-id="3863">
+                                                                                                    </span>
+                                                                                                </span>		<div class="themestek-box-content">
+                                                                                                    <div class="themestek-box-content-inner">
+                                                                                                        <div class="themestek-pf-box-title">
+                                                                                                            <h3><a href="~/Webcontent//optometrist-service/transitions-lenses/index.htm">Malformation</a></h3>
+                                                                                                        </div>
+                                                                                                        <div class="themestek-box-desc">
+                                                                                                            <p>Caring Your Health is important sec tetur adipisicing.</p>
+                                                                                                        </div>
+
+                                                                                                        <div class="ts-vc_btn3-container ts-vc_btn3-inline">
+                                                                                                            <a class="ts-vc_general ts-vc_btn3 ts-vc_btn3-size-md ts-vc_btn3-shape-round ts-vc_btn3-weight-yes ts-vc_btn3-style-text  ts-vc_btn3-icon-right ts-vc_btn3-color-skincolor" href="../optometrist-service/transitions-lenses/index.htm" title="Transitions Lenses">
+                                                                                                                Read More <i class="ts-vc_btn3-icon fa fa-arrow-circle-right"></i>
+                                                                                                            </a>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </article>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div><!-- .themestek-boxes-inner -->
+                                                                        </div><!-- .themestek-boxes -->
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="vc_row-full-width vc_clearfix"></div>
+                                    <div data-vc-full-width="true" data-vc-full-width-init="false" class="ts-row wpb_row vc_row-fluid vc_custom_1529148134280 ts-responsive-custom-23835983 vc_row-has-fill ts-bgcolor-darkgrey ts-bgimage-position-center_top ts-bg ts-bgimage-yes">
+                                        <div class="ts-row-wrapper-bg-layer ts-bg-layer"></div><!-- ThemeStek custom DIV added -->
+
+                                        <div class="vc_row container">
+
+                                            <div class="ts-column wpb_column vc_column_container vc_col-sm-12">
+                                                <div class="vc_column-inner  ">
+                                                    <div class="wpb_wrapper">
+                                                        <div class="ts-element-heading-wrapper ts-heading-inner ts-element-align-center ts-seperator-none ">
+                                                            <section class="ts-vc_cta3-container">
+                                                                <div class="ts-vc_general ts-vc_cta3 ts-cta3-only ts-vc_cta3-style-classic ts-vc_cta3-shape-rounded ts-vc_cta3-align-center ts-vc_cta3-color-transparent ts-vc_cta3-icon-size-md ts-vc_cta3-actions-no ts-cta3-without-desc">
+                                                                    <div class="ts-vc_cta3_content-container">
+                                                                        <div class="ts-vc_cta3-content">
+                                                                            <div class="ts-vc_cta3-content-header ts-wrap">
+                                                                                <div class="ts-vc_cta3-headers ts-wrap-cell">
+                                                                                    <h4 class="ts-custom-heading ">GET APPOINTMENT</h4>
+                                                                                    <h2 class="ts-custom-heading ">
+                                                                                        GET THE RIGHT OPTOMETRIST<br>
+                                                                                        <strong>CARE BOOK WITH YOUR DOCTOR</strong>
+                                                                                    </h2>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </section>
+                                                        </div> <!-- .ts-element-heading-wrapper container -->
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="vc_row-full-width vc_clearfix"></div>
+                                    <div data-vc-full-width="true" data-vc-full-width-init="false" class="ts-row wpb_row vc_row-fluid vc_custom_1529146310148 ts-responsive-custom-48609082 ts-bgcolor-grey ts-bgimage-position-center_center">
+
+                                        <div class="vc_row container">
+
+                                            <div class="ts-column wpb_column vc_column_container vc_col-sm-12">
+                                                <div class="vc_column-inner  ">
+                                                    <div class="wpb_wrapper">
+
+                                                        <div class="ts-row-inner vc_row wpb_row vc_inner vc_row-fluid box-shadow-1 vc_custom_1529144765275 ts-responsive-custom-69447609 vc_row-o-equal-height vc_row-flex ts-bgcolor-white">
+
+                                                            <div class="ts-column-inner wpb_column vc_column_container vc_col-sm-4 vc_col-has-fill">
+                                                                <div class="vc_column-inner vc_custom_1524728792898  ts-col-bgimage-yes">
+                                                                    <div class="ts-col-wrapper-bg-layer ts-bg-layer"><div class="ts-bg-layer-inner"></div></div>
+                                                                    <div class="wpb_wrapper">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="ts-column-inner wpb_column vc_column_container vc_col-sm-8">
+                                                                <div class="vc_column-inner vc_custom_1528006414111 ts-responsive-custom-21708474">
+
+                                                                    <div class="wpb_wrapper">
+                                                                        <h4 style="text-align:left;font-family:'Montserrat',Arial,Helvetica;font-weight:400;" class="ts-custom-heading ts-skincolor-strong vc_custom_1528002701208">Please call <strong>+0771-4017979, 4047462</strong> if urgent</h4>
+                                                                        <p style="text-align:left;font-size:14px;line-height:24px;color:#919191;" class="ts-custom-heading vc_custom_1524744225410">your personal case manager will ensure thate you receive the best possible care</p>
+                                                                        <div role="form" class="wpcf7" id="wpcf7-f3879-p5-o2" lang="en-US" dir="ltr">
+                                                                            <div class="screen-reader-response"></div>
+                                                                            <form action="/demo2/homepage-1/#wpcf7-f3879-p5-o2" method="post" class="wpcf7-form" novalidate="novalidate">
+                                                                                <div style="display: none;">
+                                                                                    <input type="hidden" name="_wpcf7" value="3879">
+                                                                                    <input type="hidden" name="_wpcf7_version" value="5.1.3">
+                                                                                    <input type="hidden" name="_wpcf7_locale" value="en_US">
+                                                                                    <input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f3879-p5-o2">
+                                                                                    <input type="hidden" name="_wpcf7_container_post" value="5">
+                                                                                </div>
+                                                                                <div class="main-form">
+                                                                                    <div class="row">
+                                                                                        <div class="col-sm-6">
+                                                                                            <div class="input-group"><span class="wpcf7-form-control-wrap your-name"><input type="text" name="your-name" value="" size="40" class="wpcf7-form-control wpcf7-text" aria-invalid="false" placeholder="Name Surname"></span></div>
+                                                                                        </div>
+                                                                                        <div class="col-sm-6">
+                                                                                            <div class="input-group"><span class="wpcf7-form-control-wrap your-email"><input type="email" name="your-email" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" aria-invalid="false" placeholder="Email"></span></div>
+                                                                                        </div>
+                                                                                        <div class="col-sm-6">
+                                                                                            <div class="input-group"><span class="wpcf7-form-control-wrap your-phone"><input type="text" name="your-phone" value="" size="40" class="wpcf7-form-control wpcf7-text" aria-invalid="false" placeholder="Phone"></span></div>
+                                                                                        </div>
+                                                                                        <div class="col-sm-6">
+                                                                                            <div class="input-group"><span class="wpcf7-form-control-wrap department"><select name="department" class="wpcf7-form-control wpcf7-select form-control" aria-invalid="false"><option value="Select Department">Select Department</option><option value="Laser Eye Surgery">Laproscopy</option><option value="Cataract Surgery">Colposcopy</option><option value="Glaucoma Surgery">Hysteroscopy</option></select></span></div>
+                                                                                        </div>
+                                                                                        <div class="col-sm-6">
+                                                                                            <div class="input-group"><span class="wpcf7-form-control-wrap appointment-date"><input type="text" name="appointment-date" value="" size="40" class="wpcf7-form-control wpcf7-text" aria-invalid="false" placeholder="Appointment Date"></span></div>
+                                                                                        </div>
+                                                                                        <div class="col-sm-6">
+                                                                                            <div class="input-group"><span class="wpcf7-form-control-wrap appointment-time"><input type="text" name="appointment-time" value="" size="40" class="wpcf7-form-control wpcf7-text" aria-invalid="false" placeholder="Appointment Time"></span></div>
+                                                                                        </div>
+                                                                                        <div class="col-sm-12">
+                                                                                            <div class="input-group input-button"><input type="submit" value="Make Appointment" class="wpcf7-form-control wpcf7-submit"></div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="wpcf7-response-output wpcf7-display-none"></div>
+                                                                            </form>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="ts-row-inner vc_row wpb_row vc_inner vc_row-fluid text-center ts-two-colum-view vc_custom_1529125804245">
+
+                                                            <div class="ts-column-inner wpb_column vc_column_container vc_col-sm-3">
+                                                                <div class="vc_column-inner  ">
+
+                                                                    <div class="wpb_wrapper">
+
+                                                                        <div class="ts-fid inside ts-fid-boxstyle-without-icon ts-fidbox-style-3">
+                                                                            <div class="ts-fld-contents">
+                                                                                <h3 class="ts-fid-inner">
+                                                                                    <span data-appear-animation="animateDigits" data-from="0" data-to="168" data-interval="5">
+                                                                                        168
+                                                                                    </span>
+                                                                                </h3>
+                                                                                <h6 class="ts-fid-title"><span>year of experiencs<br></span></h6>
+                                                                            </div><!-- .ts-fld-contents -->
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="ts-column-inner wpb_column vc_column_container vc_col-sm-3">
+                                                                <div class="vc_column-inner  ">
+
+                                                                    <div class="wpb_wrapper">
+
+                                                                        <div class="ts-fid inside ts-fid-boxstyle-without-icon ts-fidbox-style-3">
+                                                                            <div class="ts-fld-contents">
+                                                                                <h3 class="ts-fid-inner">
+                                                                                    <span data-appear-animation="animateDigits" data-from="0" data-to="12" data-interval="5">
+                                                                                        12
+                                                                                    </span>
+                                                                                </h3>
+                                                                                <h6 class="ts-fid-title"><span>awad by GOV<br></span></h6>
+                                                                            </div><!-- .ts-fld-contents -->
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="ts-column-inner wpb_column vc_column_container vc_col-sm-3">
+                                                                <div class="vc_column-inner  ">
+
+                                                                    <div class="wpb_wrapper">
+
+                                                                        <div class="ts-fid inside ts-fid-boxstyle-without-icon ts-fidbox-style-3">
+                                                                            <div class="ts-fld-contents">
+                                                                                <h3 class="ts-fid-inner">
+                                                                                    <span data-appear-animation="animateDigits" data-from="0" data-to="368" data-interval="5">
+                                                                                        368
+                                                                                    </span>
+                                                                                </h3>
+                                                                                <h6 class="ts-fid-title"><span>Diffrent Services<br></span></h6>
+                                                                            </div><!-- .ts-fld-contents -->
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="ts-column-inner wpb_column vc_column_container vc_col-sm-3">
+                                                                <div class="vc_column-inner  ">
+
+                                                                    <div class="wpb_wrapper">
+
+                                                                        <div class="ts-fid inside ts-fid-boxstyle-without-icon ts-fidbox-style-3">
+                                                                            <div class="ts-fld-contents">
+                                                                                <h3 class="ts-fid-inner">
+                                                                                    <span data-appear-animation="animateDigits" data-from="0" data-to="1000" data-interval="5">
+                                                                                        1000
+                                                                                    </span>
+                                                                                </h3>
+                                                                                <h6 class="ts-fid-title"><span>Happy Patients<br></span></h6>
+                                                                            </div><!-- .ts-fld-contents -->
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="ts-row-inner vc_row wpb_row vc_inner vc_row-fluid vc_custom_1528020743171 ts-responsive-custom-45355937">
+
+                                                            <div class="ts-column-inner wpb_column vc_column_container vc_col-sm-6">
+                                                                <div class="vc_column-inner vc_custom_1529142718448 ts-responsive-custom-83153635">
+
+                                                                    <div class="wpb_wrapper">
+                                                                        <div class="ts-element-heading-wrapper ts-heading-inner ts-element-align-left ts-seperator-none ">
+                                                                            <section class="ts-vc_cta3-container">
+                                                                                <div class="ts-vc_general ts-vc_cta3 ts-cta3-only ts-vc_cta3-style-classic ts-vc_cta3-shape-rounded ts-vc_cta3-align-left ts-vc_cta3-color-transparent ts-vc_cta3-icon-size-md ts-vc_cta3-actions-no ts-cta3-without-desc">
+                                                                                    <div class="ts-vc_cta3_content-container">
+                                                                                        <div class="ts-vc_cta3-content">
+                                                                                            <div class="ts-vc_cta3-content-header ts-wrap">
+                                                                                                <div class="ts-vc_cta3-headers ts-wrap-cell">
+                                                                                                    <h4 class="ts-custom-heading ">RECENT NEWS</h4>
+                                                                                                    <h2 class="ts-custom-heading ">
+                                                                                                        WHAT'S GOING ON<br>
+                                                                                                        <strong> IN OUR BLOG?</strong>
+                                                                                                    </h2>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </section>
+                                                                        </div> <!-- .ts-element-heading-wrapper container --> <div class="themestek-boxes themestek-boxes-blog themestek-boxes-view-default themestek-boxes-col-one themestek-boxes-sortable-no themestek-boxes-textalign-center themestek-boxes-sortablebutton-">
+                                                                            <div class="themestek-boxes-inner themestek-boxes-blog-inner ">
+
+                                                                                <div class="row multi-columns-row themestek-boxes-row-wrapper">
+                                                                                    <div class="ts-box-col-wrapper col-lg-12 col-sm-12 col-md-12 col-xs-12 paediatric">
+                                                                                        <article class="themestek-box themestek-box-blog ts-blogbox-style-2 themestek-blogbox-format-  themestek-box-view-style2 themestek-blog-box-view-left-image themestek-blog-box-lr">
+                                                                                            <div class="post-item">
+                                                                                                <div class="col-md-4 col-sm-4 themestek-box-img-left">
+                                                                                                    <div class="ts-featured-wrapper ts-post-featured-wrapper ts-post-format-"><img width="800" height="740" src="~/Webcontent/wp-content/uploads/sites/3/2018/02/04-800x740.jpg" class="attachment-themestek-img-800x740 size-themestek-img-800x740 wp-post-image" alt="" data-id="3877"></div>
+                                                                                                </div>
+                                                                                                <div class="themestek-box-content col-md-8 col-sm-8">
+                                                                                                    <div class="themestek-box-content-inner">
+                                                                                                        <div class="ts-featured-meta-wrapper ts-featured-overlay">
+                                                                                                            <span class="ts-meta-line cat-links"><i class="ts-optico-icon-category"></i> <span class="screen-reader-text ts-hide">Categories </span><a href="../category/paediatric/index.htm">Paediatric</a></span>
+
+                                                                                                            <span class="ts-meta-line posted-on">
+                                                                                                                <i class="ts-optico-icon-clock"></i>
+                                                                                                                <span class="screen-reader-text ts-hide">Posted on </span>
+                                                                                                                <a href="../2018/02/18/thats-why-it-is-so-important-to-see-an-ophthalmologist/index.htm" rel="bookmark">
+                                                                                                                    <time class="entry-date published" datetime="2018-02-18T09:49:46+00:00">February 18, 2018</time>
+                                                                                                                    <time class="updated ts-hide" datetime="2018-06-16T13:34:17+00:00">June 16, 2018</time>
+                                                                                                                </a>
+                                                                                                            </span>
+                                                                                                        </div>
+                                                                                                        <div class="themestek-box-title"><h4><a href="../2018/02/18/thats-why-it-is-so-important-to-see-an-ophthalmologist/index.htm">That&#8217;s why it is so important to see an ophthalmologist</a></h4></div>
+                                                                                                        <div class="themestek-box-desc">
+                                                                                                            <div class="themestek-box-desc-text"><p>Eyecare Sed ut perspiciatis unde omnis iste natus error doloremque laudantium.</p></div>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </article>
+                                                                                    </div><div class="ts-box-col-wrapper col-lg-12 col-sm-12 col-md-12 col-xs-12 glaucoma">
+                                                                                        <article class="themestek-box themestek-box-blog ts-blogbox-style-2 themestek-blogbox-format-  themestek-box-view-style2 themestek-blog-box-view-left-image themestek-blog-box-lr">
+                                                                                            <div class="post-item">
+                                                                                                <div class="col-md-4 col-sm-4 themestek-box-img-left">
+                                                                                                    <div class="ts-featured-wrapper ts-post-featured-wrapper ts-post-format-"><img width="800" height="740" src="~/Webcontent/wp-content/uploads/sites/3/2018/02/14-800x740.jpg" class="attachment-themestek-img-800x740 size-themestek-img-800x740 wp-post-image" alt="" data-id="3869"></div>
+                                                                                                </div>
+                                                                                                <div class="themestek-box-content col-md-8 col-sm-8">
+                                                                                                    <div class="themestek-box-content-inner">
+                                                                                                        <div class="ts-featured-meta-wrapper ts-featured-overlay">
+                                                                                                            <span class="ts-meta-line cat-links"><i class="ts-optico-icon-category"></i> <span class="screen-reader-text ts-hide">Categories </span><a href="../category/glaucoma/index.htm">Glaucoma</a></span>
+
+                                                                                                            <span class="ts-meta-line posted-on">
+                                                                                                                <i class="ts-optico-icon-clock"></i>
+                                                                                                                <span class="screen-reader-text ts-hide">Posted on </span>
+                                                                                                                <a href="../2018/01/21/signs-or-risk-factors-for-eye-disease/index.htm" rel="bookmark">
+                                                                                                                    <time class="entry-date published" datetime="2018-01-21T10:43:28+00:00">January 21, 2018</time>
+                                                                                                                    <time class="updated ts-hide" datetime="2018-06-16T13:35:55+00:00">June 16, 2018</time>
+                                                                                                                </a>
+                                                                                                            </span>
+                                                                                                        </div>
+                                                                                                        <div class="themestek-box-title"><h4><a href="../2018/01/21/signs-or-risk-factors-for-eye-disease/index.htm">Signs or risk factors for eye disease</a></h4></div>
+                                                                                                        <div class="themestek-box-desc">
+                                                                                                            <div class="themestek-box-desc-text"><p>Eyecare Sed ut perspiciatis unde omnis iste natus error doloremque laudantium.</p></div>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </article>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div><!-- .themestek-boxes-inner -->
+                                                                        </div><!-- .themestek-boxes -->
+                                                                        <div class="ts-vc_btn3-container ts-vc_btn3-inline vc_custom_1527247513027"><a class="ts-vc_general ts-vc_btn3 ts-vc_btn3-size-md ts-vc_btn3-shape-rounded ts-vc_btn3-style-text ts-vc_btn3-weight-yes ts-vc_btn3-icon-left ts-vc_btn3-color-skincolor" href="https://optico.themestek.com/blog/" title=""><i class="ts-vc_btn3-icon fa fa-long-arrow-right"></i> SEE ALL OUR BLOGS</a></div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="ts-column-inner wpb_column vc_column_container vc_col-sm-6">
+                                                                <div class="vc_column-inner vc_custom_1529142806528 ts-responsive-custom-13473713 ts-col-bgcolor-skincolor ts-col-bgcolor-yes">
+                                                                    <div class="ts-col-wrapper-bg-layer ts-bg-layer"><div class="ts-bg-layer-inner"></div></div>
+                                                                    <div class="wpb_wrapper">
+                                                                        <div class="themestek-boxes themestek-boxes-testimonial themestek-boxes-view-carousel themestek-boxes-col-one themestek-boxes-sortable-no themestek-boxes-textalign-left themestek-boxes-sortablebutton- ts-boxes-carousel-arrows-below ts-boxes-txtalign-left" data-ts-speed="1500" data-ts-autoplay="1" data-ts-autoplayspeed="4500" data-ts-loop="1" data-ts-dots="0" data-ts-nav="below" data-ts-centermode="0" data-ts-pauseonfocus="1" data-ts-pauseonhover="1" data-ts-slidestoscroll="column" data-ts-effecttype="slide">
+                                                                            <div class="themestek-boxes-inner themestek-boxes-testimonial-inner ">
+                                                                                <div class="themestek-box-heading-wrapper ts-element-align-left">
+                                                                                    <div class="ts-element-heading-wrapper ts-heading-inner ts-element-align-left ts-seperator-none ">
+                                                                                        <section class="ts-vc_cta3-container">
+                                                                                            <div class="ts-vc_general ts-vc_cta3 ts-cta3-only ts-vc_cta3-style-classic ts-vc_cta3-shape-rounded ts-vc_cta3-align-left ts-vc_cta3-color-transparent ts-vc_cta3-icon-size-md ts-vc_cta3-actions-no ts-cta3-without-desc">
+                                                                                                <div class="ts-vc_cta3_content-container">
+                                                                                                    <div class="ts-vc_cta3-content">
+                                                                                                        <div class="ts-vc_cta3-content-header ts-wrap">
+                                                                                                            <div class="ts-vc_cta3-headers ts-wrap-cell">
+                                                                                                                <h4 class="ts-custom-heading ">TESTIMONIALS</h4>
+                                                                                                                <h2 class="ts-custom-heading ">
+                                                                                                                    WHAT OUR<br>
+                                                                                                                    <strong>PATIENT’S TALKING ?</strong>
+                                                                                                                </h2>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </section>
+                                                                                    </div> <!-- .ts-element-heading-wrapper container -->
+                                                                                </div> <!-- .ts-element-heading-wrapper container -->
+
+                                                                                <div class="row multi-columns-row themestek-boxes-row-wrapper">
+                                                                                    <div class="ts-box-col-wrapper col-lg-12 col-sm-12 col-md-12 col-xs-12 company others">
+                                                                                        <article class="themestek-box themestek-box-testimonial ts-testimonialbox-style-1">
+                                                                                            <div class="themestek-post-item">
+                                                                                                <div class="themestek-box-content">
+                                                                                                    <div class="themestek-box-desc"><blockquote class="themestek-testimonial-text">Excellent may good bless hands of Dr. Pre operational care and facilities provided to the patients is very much satisfactory. Kindly keep it up. This is good spirit.</blockquote></div>
+                                                                                                    <div class="themestek-box-img">
+                                                                                                        <span class="themestek-item-thumbnail">
+                                                                                                            <span class="themestek-item-thumbnail-inner">
+                                                                                                                <img width="150" height="150" src="~/Webcontent/wp-content/uploads/sites/3/2018/03/img-03-150x150.jpg" class="attachment-thumbnail size-thumbnail wp-post-image" alt="" data-id="3760">
+                                                                                                            </span>
+                                                                                                        </span>
+                                                                                                    </div>
+                                                                                                    <div class="themestek-box-author"><div class="themestek-box-title"><h3 class="themestek-author-name">MR J.S LAL,Raipur</h3></div></div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </article>
+                                                                                    </div><div class="ts-box-col-wrapper col-lg-12 col-sm-12 col-md-12 col-xs-12 general others">
+                                                                                        <article class="themestek-box themestek-box-testimonial ts-testimonialbox-style-1">
+                                                                                            <div class="themestek-post-item">
+                                                                                                <div class="themestek-box-content">
+                                                                                                    <div class="themestek-box-desc"><blockquote class="themestek-testimonial-text">स्टाफ से लेकर डॉक्टर तक सभी से संतुष्ट है । ऐसी सेवा हर इंसान को मिले ।</blockquote></div>
+                                                                                                    <div class="themestek-box-img">
+                                                                                                        <span class="themestek-item-thumbnail">
+                                                                                                            <span class="themestek-item-thumbnail-inner">
+                                                                                                                <img width="150" height="150" src="~/Webcontent/wp-content/uploads/sites/3/2018/05/ts-after-image2-150x150.jpg" class="attachment-thumbnail size-thumbnail wp-post-image" alt="" srcset="~/Webcontent/wp-content/uploads/sites/3/2018/05/ts-after-image2-150x150.jpg 150w, ../wp-content/uploads/sites/3/2018/05/ts-after-image2-800x800.jpg 800w" sizes="(max-width: 150px) 100vw, 150px" data-id="4390">
+                                                                                                            </span>
+                                                                                                        </span>
+                                                                                                    </div>
+                                                                                                    <div class="themestek-box-author"><div class="themestek-box-title"><h3 class="themestek-author-name"><a href="#" target="_blank">Mr. Pritam Sing, Panjab</a></h3> </div></div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </article>
+                                                                                    </div><div class="ts-box-col-wrapper col-lg-12 col-sm-12 col-md-12 col-xs-12 company general others">
+                                                                                        <article class="themestek-box themestek-box-testimonial ts-testimonialbox-style-1">
+                                                                                            <div class="themestek-post-item">
+                                                                                                <div class="themestek-box-content">
+                                                                                                    <div class="themestek-box-desc"><blockquote class="themestek-testimonial-text">यहाँ सही सलाह दी जाती है, बहुत संतुष्ट है, खुश है। इलाज तो हर जगह हो जाता है पर साई बाबा आई हॉस्पिटल जैसा व्यवहार कहीं नहीं मिलेगा ।</blockquote></div>
+                                                                                                    <div class="themestek-box-img">
+                                                                                                        <span class="themestek-item-thumbnail">
+                                                                                                            <span class="themestek-item-thumbnail-inner">
+                                                                                                                <img width="150" height="150" src="~/Webcontent/wp-content/uploads/sites/3/2018/05/ts-after-image3-150x150.jpg" class="attachment-thumbnail size-thumbnail wp-post-image" alt="" srcset="~/Webcontent/wp-content/uploads/sites/3/2018/05/ts-after-image3-150x150.jpg 150w, ../wp-content/uploads/sites/3/2018/05/ts-after-image3-800x800.jpg 800w" sizes="(max-width: 150px) 100vw, 150px" data-id="4393">
+                                                                                                            </span>
+                                                                                                        </span>
+                                                                                                    </div>
+                                                                                                    <div class="themestek-box-author">
+                                                                                                        <div class="themestek-box-title">
+                                                                                                            <h3 class="themestek-author-name">
+                                                                                                                <a href="#" target="_blank">
+                                                                                                                    Mr. Mohan Sing, Jharkhand Distt. Girdih
+                                                                                                                </a>
+                                                                                                            </h3>@*<span class="themestek-box-footer">CEO at Google INC</span>*@
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </article>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div><!-- .themestek-boxes-inner -->
+                                                                        </div><!-- .themestek-boxes -->
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="vc_row-full-width vc_clearfix"></div>
+                                    <div class="ts-row wpb_row vc_row-fluid vc_row container ts-bgimage-position-center_center">
+
+
+
+                                        <div class="ts-column wpb_column vc_column_container vc_col-sm-12">
+                                            <div class="vc_column-inner  ">
+                                                <div class="wpb_wrapper">
+                                                    <div class="themestek-boxes themestek-boxes-client themestek-boxes-view-default themestek-boxes-col-six themestek-boxes-sortable-no themestek-boxes-textalign-center themestek-boxes-sortablebutton-">
+                                                        <div class="themestek-boxes-inner themestek-boxes-client-inner ">
+
+                                                            <div class="row multi-columns-row themestek-boxes-row-wrapper">
+                                                                <div class="ts-box-col-wrapper col-lg-2 col-sm-4 col-md-4 col-xs-12 ">
+                                                                    <div class="ts-client-logo-box-w">
+                                                                        <div class="ts-client-logo-tooltip" data-tooltip="PLAIN VIEW">
+                                                                            <div class="themestek-box themestek-box-client ts-clientbox-style-1 themestek-box-view-style1 themestek-client-box-view-style1 ">
+
+                                                                                <span class="themestek-item-thumbnail">
+                                                                                    <span class="themestek-item-thumbnail-inner">
+                                                                                        <img width="180" height="46" src="~/Webcontent/wp-content/uploads/sites/3/2018/04/client-6.png" class="attachment-full size-full wp-post-image" alt="">
+                                                                                    </span>
+                                                                                </span>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div><!-- .ts-client-logo-box-w -->
+                                                                </div><div class="ts-box-col-wrapper col-lg-2 col-sm-4 col-md-4 col-xs-12 ">
+                                                                    <div class="ts-client-logo-box-w">
+                                                                        <div class="ts-client-logo-tooltip" data-tooltip="MARCO REA">
+                                                                            <div class="themestek-box themestek-box-client ts-clientbox-style-1 themestek-box-view-style1 themestek-client-box-view-style1 ">
+
+                                                                                <span class="themestek-item-thumbnail">
+                                                                                    <span class="themestek-item-thumbnail-inner">
+                                                                                        <img width="180" height="46" src="~/Webcontent/wp-content/uploads/sites/3/2018/04/client-5.png" class="attachment-full size-full wp-post-image" alt="">
+                                                                                    </span>
+                                                                                </span>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div><!-- .ts-client-logo-box-w -->
+                                                                </div><div class="ts-box-col-wrapper col-lg-2 col-sm-4 col-md-4 col-xs-12 ">
+                                                                    <div class="ts-client-logo-box-w">
+                                                                        <div class="ts-client-logo-tooltip" data-tooltip="STALION">
+                                                                            <div class="themestek-box themestek-box-client ts-clientbox-style-1 themestek-box-view-style1 themestek-client-box-view-style1 ">
+
+                                                                                <span class="themestek-item-thumbnail">
+                                                                                    <span class="themestek-item-thumbnail-inner">
+                                                                                        <img width="180" height="46" src="~/Webcontent/wp-content/uploads/sites/3/2018/04/client-4.png" class="attachment-full size-full wp-post-image" alt="">
+                                                                                    </span>
+                                                                                </span>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div><!-- .ts-client-logo-box-w -->
+                                                                </div><div class="ts-box-col-wrapper col-lg-2 col-sm-4 col-md-4 col-xs-12 ">
+                                                                    <div class="ts-client-logo-box-w">
+                                                                        <div class="ts-client-logo-tooltip" data-tooltip="Villatex">
+                                                                            <div class="themestek-box themestek-box-client ts-clientbox-style-1 themestek-box-view-style1 themestek-client-box-view-style1 ">
+
+                                                                                <span class="themestek-item-thumbnail">
+                                                                                    <span class="themestek-item-thumbnail-inner">
+                                                                                        <img width="180" height="46" src="~/Webcontent/wp-content/uploads/sites/3/2018/04/client-3.png" class="attachment-full size-full wp-post-image" alt="">
+                                                                                    </span>
+                                                                                </span>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div><!-- .ts-client-logo-box-w -->
+                                                                </div><div class="ts-box-col-wrapper col-lg-2 col-sm-4 col-md-4 col-xs-12 ">
+                                                                    <div class="ts-client-logo-box-w">
+                                                                        <div class="ts-client-logo-tooltip" data-tooltip="Cronit Pharmacy">
+                                                                            <div class="themestek-box themestek-box-client ts-clientbox-style-1 themestek-box-view-style1 themestek-client-box-view-style1 ">
+
+                                                                                <span class="themestek-item-thumbnail">
+                                                                                    <span class="themestek-item-thumbnail-inner">
+                                                                                        <img width="180" height="46" src="~/Webcontent/wp-content/uploads/sites/3/2018/04/client-2.png" class="attachment-full size-full wp-post-image" alt="">
+                                                                                    </span>
+                                                                                </span>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div><!-- .ts-client-logo-box-w -->
+                                                                </div><div class="ts-box-col-wrapper col-lg-2 col-sm-4 col-md-4 col-xs-12 ">
+                                                                    <div class="ts-client-logo-box-w">
+                                                                        <div class="ts-client-logo-tooltip" data-tooltip="MED NET">
+                                                                            <div class="themestek-box themestek-box-client ts-clientbox-style-1 themestek-box-view-style1 themestek-client-box-view-style1 ">
+
+                                                                                <span class="themestek-item-thumbnail">
+                                                                                    <span class="themestek-item-thumbnail-inner">
+                                                                                        <img width="180" height="46" src="~/Webcontent/wp-content/uploads/sites/3/2018/04/client-1.png" class="attachment-full size-full wp-post-image" alt="">
+                                                                                    </span>
+                                                                                </span>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div><!-- .ts-client-logo-box-w -->
+                                                                </div>
+                                                            </div>
+                                                        </div><!-- .themestek-boxes-inner -->
+                                                    </div><!-- .themestek-boxes -->
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div><!-- .entry-content -->
+
+                            </article><!-- #post-## -->
+                        </main><!-- #main .site-main -->
+                    </div><!-- #primary .content-area -->
+
+                </div><!-- .site-content-inner -->
+            </div><!-- .site-content -->
+        </div><!-- .site-content-wrapper -->
+        <footer id="colophon" class="site-footer ">
+            <div class="footer_inner_wrapper footer ts-bg ts-bgcolor-grey ts-bgimage-no">
+                <div class="site-footer-bg-layer ts-bg-layer"></div>
+                <div class="site-footer-w">
+                    <div class="footer-rows">
+                        <div class="footer-rows-inner">
+
+                            <div id="first-footer" class="sidebar-container first-footer  ts-bg ts-bgcolor-skincolor ts-textcolor-dark ts-bgimage-no" role="complementary">
+                                <div class="first-footer-bg-layer ts-bg-layer"></div>
+                                <div class="container">
+                                    <div class="first-footer-inner">
+                                        <div class="row multi-columns-row">
+                                            <div class="widget-area col-xs-12 col-sm-12 col-md-12 col-lg-12 first-widget-area">
+                                                <aside id="enhancedtextwidget-2" class="ts-footer-cta widget widget_text enhanced-text-widget">
+                                                    <div class="textwidget widget-text">
+                                                        <section class="ts-vc_cta3-container">
+                                                            <div class="ts-vc_general ts-vc_cta3 ts-cta3-only ts-vc_cta3-style-classic ts-vc_cta3-shape-square ts-vc_cta3-align-left ts-vc_cta3-color-transparent ts-vc_cta3-icon-size-lg ts-vc_cta3-icons-left ts-vc_cta3-actions-right ts-cta3-without-desc">
+                                                                <div class="ts-vc_cta3-icons ts-wrap-cell"><div class="ts-vc_icon_element ts-vc_icon_element-outer ts-vc_icon_element-align-left  ts-vc_icon_element-have-style"><div class="ts-vc_icon_element-inner  ts-vc_icon_element-have-style-inner ts-vc_icon_element-color-black ts-vc_icon_element-size-lg ts-vc_icon_element-style-rounded ts-vc_icon_element-background ts-vc_icon_element-background-color-white"><span class="ts-vc_icon_element-icon themifyicon ti-headphone-alt"></span></div></div></div><div class="ts-vc_cta3_content-container">
+                                                                    <div class="ts-vc_cta3-content">
+                                                                        <div class="ts-vc_cta3-content-header ts-wrap">
+                                                                            <div class="ts-vc_cta3-headers ts-wrap-cell">
+                                                                                <h2 style="font-size:22px;line-height:36px;" class="ts-custom-heading ">
+                                                                                    If you Have Any Questions Schedule an Appointment
+                                                                                    <strong>With Our Doctor OR Call Us On 0771-4017979/ 4047462</strong>
+                                                                                </h2>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div><div class="ts-vc_cta3-actions">
+                                                                        <div class="ts-vc_btn3-container ts-vc_btn3-right"><a class="ts-vc_general ts-vc_btn3 ts-vc_btn3-size-md ts-vc_btn3-shape-rounded ts-vc_btn3-style-flat ts-vc_btn3-weight-yes ts-vc_btn3-color-black" href="#" title=""> Make an Appointment</a></div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </section>
+                                                    </div>
+                                                </aside>
+                                            </div><!-- .widget-area -->
+
+                                        </div><!-- .row.multi-columns-row -->
+                                    </div><!-- .first-footer-inner -->
+                                </div><!--  -->
+                            </div><!-- #secondary -->
+
+                            <div id="second-footer" class="sidebar-container second-footer ts-bg ts-bgcolor-transparent ts-textcolor-dark ts-bgimage-no" role="complementary">
+                                <div class="second-footer-bg-layer ts-bg-layer"></div>
+                                <div class="container">
+                                    <div class="second-footer-inner">
+                                        <div class="row multi-columns-row">
+
+                                            <div class="widget-area col-xs-12 col-sm-6 col-md-3 col-lg-3">
+                                                <aside id="enhancedtextwidget-3" class="widget widget_text enhanced-text-widget">
+                                                    <div class="textwidget widget-text">
+                                                        <div class="footerlogo"><img alt="Optico" src="~/Webcontent/wp-content/themes/optico/images/sbhlogo.png" height="54"></div>
+
+                                                        Sai Baba Nursing Home was started in the year 2003. It has now become a leading private Hospital of Chhattisgarh. Sai Baba Nursing Home is providing the complete care for the Women.
+                                                        <div class="vc_empty_space" style="height: 30px"><span class="vc_empty_space_inner"></span></div>
+                                                        <div class="themestek-social-links-wrapper">
+                                                            <ul class="social-icons">
+                                                                <li class="ts-social-facebook"><a class=" tooltip-top" target="_blank" href="#" data-tooltip="Facebook"><i class="ts-optico-icon-facebook"></i></a></li>
+                                                                <li class="ts-social-twitter"><a class=" tooltip-top" target="_blank" href="#" data-tooltip="Twitter"><i class="ts-optico-icon-twitter"></i></a></li>
+                                                                <li class="ts-social-flickr"><a class=" tooltip-top" target="_blank" href="#" data-tooltip="Flickr"><i class="ts-optico-icon-flickr"></i></a></li>
+                                                                <li class="ts-social-linkedin"><a class=" tooltip-top" target="_blank" href="" data-tooltip="LinkedIn"><i class="ts-optico-icon-linkedin"></i></a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </aside>
+                                            </div><!-- .widget-area -->
+
+                                            <div class="widget-area col-xs-12 col-sm-6 col-md-3 col-lg-3">
+                                                <aside id="nav_menu-2" class="widget widget_nav_menu">
+                                                    <h3 class="widget-title">Usefull Links</h3><div class="menu-footer-usefull-links-container">
+                                                        <ul id="menu-footer-usefull-links-1" class="menu">
+                                                            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5410"><a href="../make-appointments/index.htm">Make Appointments</a></li>
+                                                            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5411"><a href="https://optico.themestek.com/demo2/contact-us/">Contact Us</a></li>
+                                                            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5412"><a href="../treatments/index.htm">Treatments</a></li>
+                                                            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5413"><a href="../about-us/index.htm">About Us</a></li>
+                                                            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5414"><a href="../our-doctors/index.htm">Our Doctors</a></li>
+                                                            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5415"><a href="../before-after/index.htm">Before &amp; After</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </aside>
+                                            </div><!-- .widget-area -->
+
+                                            <div class="widget-area col-xs-12 col-sm-6 col-md-3 col-lg-3">
+                                                <aside id="nav_menu-3" class="widget widget_nav_menu">
+                                                    <h3 class="widget-title">Our Services</h3><div class="menu-footer-service-menu-container">
+                                                        <ul id="menu-footer-service-menu-1" class="menu">
+                                                            <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-5381"><a href="#">Glaucoma Surgery</a></li>
+                                                            <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-5382"><a href="#">Laser Eye Surgery</a></li>
+                                                            <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-5383"><a href="#">Cataract Surgery</a></li>
+                                                            <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-5384"><a href="#">Vision Correction</a></li>
+                                                            <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-5385"><a href="#">Oculoplastic Surgery</a></li>
+                                                            <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-5386"><a href="#">Vitreo Retinal Surgery</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </aside>
+                                            </div><!-- .widget-area -->
+
+                                            <div class="widget-area col-xs-12 col-sm-6 col-md-3 col-lg-3">
+                                                <aside id="optico_contact_widget-2" class="widget optico_contact_widget">
+                                                    <h3 class="widget-title">Get in touch</h3>
+                                                    <ul class="optico_contact_widget_wrapper">
+                                                        <li class="themestek-contact-address  ts-optico-icon-location-pin">
+                                                            New Rajendra Nagar
+                                                            Raipur <br>
+                                                            Chhattisgarh,Pin-492009 India
+                                                        </li>
+                                                        <li class="themestek-contact-phonenumber ts-optico-icon-mobile">91-0771-4017979, 4047462,<br />9329116668</li>
+                                                        <li class="themestek-contact-email ts-optico-icon-comment-1"><a href="mailto:info@example.com" target="_blank">enquiry.women@sbhhospital.com</a></li>
+                                                        <li class="themestek-contact-time ts-optico-icon-clock">
+                                                            Mon to Sat - 9:00am to 6:00pm <br>
+                                                        </li>
+                                                    </ul>
+
+                                                </aside>
+                                            </div><!-- .widget-area -->
+
+
+                                        </div><!-- .row.multi-columns-row -->
+                                    </div><!-- .second-footer-inner -->
+                                </div><!--  -->
+                            </div><!-- #secondary -->
+                        </div><!-- .footer-inner -->
+                    </div><!-- .footer -->
+
+
+                </div><!-- .footer-inner-wrapper -->
+            </div><!-- .site-footer-inner -->
+        </footer><!-- .site-footer -->
+    </div><!-- #page .site -->
+</div><!-- .main-holder -->

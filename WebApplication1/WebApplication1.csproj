@@ -1,0 +1,1159 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B48DF63E-35C9-483E-9D94-D184AD4EEA65}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WebApplication1</RootNamespace>
+    <AssemblyName>WebApplication1</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <MvcBuildViews>false</MvcBuildViews>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http">
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest">
+    </Reference>
+    <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.0.0\lib\net45\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=5.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.0.0\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Optimization">
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.1.1.1\lib\net40\System.Web.Optimization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Razor.3.0.0\lib\net45\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.0.0\lib\net45\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.0.0\lib\net45\System.Web.WebPages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.0.0\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <Private>True</Private>
+      <HintPath>..\packages\Newtonsoft.Json.5.0.6\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="WebGrease">
+      <Private>True</Private>
+      <HintPath>..\packages\WebGrease.1.5.2\lib\WebGrease.dll</HintPath>
+    </Reference>
+    <Reference Include="Antlr3.Runtime">
+      <Private>True</Private>
+      <HintPath>..\packages\Antlr.3.4.1.9004\lib\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.6.0.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\packages\EntityFramework.6.0.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.Core">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.Core.1.0.0\lib\net45\Microsoft.AspNet.Identity.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.Owin">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.Owin.1.0.0\lib\net45\Microsoft.AspNet.Identity.Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.EntityFramework">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.EntityFramework.1.0.0\lib\net45\Microsoft.AspNet.Identity.EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="Owin">
+      <HintPath>..\packages\Owin.1.0\lib\net40\Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin">
+      <HintPath>..\packages\Microsoft.Owin.2.0.0\lib\net45\Microsoft.Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Host.SystemWeb">
+      <HintPath>..\packages\Microsoft.Owin.Host.SystemWeb.2.0.0\lib\net45\Microsoft.Owin.Host.SystemWeb.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security">
+      <HintPath>..\packages\Microsoft.Owin.Security.2.0.0\lib\net45\Microsoft.Owin.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Facebook">
+      <HintPath>..\packages\Microsoft.Owin.Security.Facebook.2.0.0\lib\net45\Microsoft.Owin.Security.Facebook.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Cookies">
+      <HintPath>..\packages\Microsoft.Owin.Security.Cookies.2.0.0\lib\net45\Microsoft.Owin.Security.Cookies.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.OAuth">
+      <HintPath>..\packages\Microsoft.Owin.Security.OAuth.2.0.0\lib\net45\Microsoft.Owin.Security.OAuth.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Google">
+      <HintPath>..\packages\Microsoft.Owin.Security.Google.2.0.0\lib\net45\Microsoft.Owin.Security.Google.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Twitter">
+      <HintPath>..\packages\Microsoft.Owin.Security.Twitter.2.0.0\lib\net45\Microsoft.Owin.Security.Twitter.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.MicrosoftAccount">
+      <HintPath>..\packages\Microsoft.Owin.Security.MicrosoftAccount.2.0.0\lib\net45\Microsoft.Owin.Security.MicrosoftAccount.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\BundleConfig.cs" />
+    <Compile Include="App_Start\FilterConfig.cs" />
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="App_Start\Startup.Auth.cs" />
+    <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\WMainController.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\IdentityModels.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Startup.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="favicon.ico" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Global.asax" />
+    <Content Include="Content\Site.css" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Webcontent\2017\07\02\health-experts-advice-for-you\index-1.htm" />
+    <Content Include="Webcontent\2017\07\02\health-experts-advice-for-you\index-2.htm" />
+    <Content Include="Webcontent\2017\07\02\health-experts-advice-for-you\index-3.htm" />
+    <Content Include="Webcontent\2017\07\02\health-experts-advice-for-you\index.htm" />
+    <Content Include="Webcontent\2017\07\02\steps-to-overcoming-teenage-anger\index-1.htm" />
+    <Content Include="Webcontent\2017\07\02\steps-to-overcoming-teenage-anger\index-2.htm" />
+    <Content Include="Webcontent\2017\07\02\steps-to-overcoming-teenage-anger\index-3.htm" />
+    <Content Include="Webcontent\2017\07\02\steps-to-overcoming-teenage-anger\index.htm" />
+    <Content Include="Webcontent\2017\07\05\domiciliary-optometry-in-the-united-kingdom\index-1.htm" />
+    <Content Include="Webcontent\2017\07\05\domiciliary-optometry-in-the-united-kingdom\index-2.htm" />
+    <Content Include="Webcontent\2017\07\05\domiciliary-optometry-in-the-united-kingdom\index-3.htm" />
+    <Content Include="Webcontent\2017\07\05\domiciliary-optometry-in-the-united-kingdom\index.htm" />
+    <Content Include="Webcontent\2017\07\06\perimetry-a-change-in-the-rate-of-progress\index-1.htm" />
+    <Content Include="Webcontent\2017\07\06\perimetry-a-change-in-the-rate-of-progress\index-2.htm" />
+    <Content Include="Webcontent\2017\07\06\perimetry-a-change-in-the-rate-of-progress\index-3.htm" />
+    <Content Include="Webcontent\2017\07\06\perimetry-a-change-in-the-rate-of-progress\index.htm" />
+    <Content Include="Webcontent\2017\08\09\how-much-protein-do-you-really-need\index-1.htm" />
+    <Content Include="Webcontent\2017\08\09\how-much-protein-do-you-really-need\index-2.htm" />
+    <Content Include="Webcontent\2017\08\09\how-much-protein-do-you-really-need\index-3.htm" />
+    <Content Include="Webcontent\2017\08\09\how-much-protein-do-you-really-need\index.htm" />
+    <Content Include="Webcontent\2017\08\10\electronic-vision-enhancement-for-low-vision\index-1.htm" />
+    <Content Include="Webcontent\2017\08\10\electronic-vision-enhancement-for-low-vision\index-2.htm" />
+    <Content Include="Webcontent\2017\08\10\electronic-vision-enhancement-for-low-vision\index-3.htm" />
+    <Content Include="Webcontent\2017\08\10\electronic-vision-enhancement-for-low-vision\index-4.htm" />
+    <Content Include="Webcontent\2017\08\10\electronic-vision-enhancement-for-low-vision\index.htm" />
+    <Content Include="Webcontent\2017\08\13\a-general-practice-model-for-low-vision-lessons-learned-in-wales\index-1.htm" />
+    <Content Include="Webcontent\2017\08\13\a-general-practice-model-for-low-vision-lessons-learned-in-wales\index-2.htm" />
+    <Content Include="Webcontent\2017\08\13\a-general-practice-model-for-low-vision-lessons-learned-in-wales\index-3.htm" />
+    <Content Include="Webcontent\2017\08\13\a-general-practice-model-for-low-vision-lessons-learned-in-wales\index.htm" />
+    <Content Include="Webcontent\2017\08\15\emerging-treatments-for-age-related-macular-degeneration\index-1.htm" />
+    <Content Include="Webcontent\2017\08\15\emerging-treatments-for-age-related-macular-degeneration\index-2.htm" />
+    <Content Include="Webcontent\2017\08\15\emerging-treatments-for-age-related-macular-degeneration\index-3.htm" />
+    <Content Include="Webcontent\2017\08\15\emerging-treatments-for-age-related-macular-degeneration\index.htm" />
+    <Content Include="Webcontent\2017\09\22\dementia-and-optometry-a-growing-need\index-1.htm" />
+    <Content Include="Webcontent\2017\09\22\dementia-and-optometry-a-growing-need\index-2.htm" />
+    <Content Include="Webcontent\2017\09\22\dementia-and-optometry-a-growing-need\index-3.htm" />
+    <Content Include="Webcontent\2017\09\22\dementia-and-optometry-a-growing-need\index.htm" />
+    <Content Include="Webcontent\2017\09\23\how-much-do-you-really-need-in-a-day\index-1.htm" />
+    <Content Include="Webcontent\2017\09\23\how-much-do-you-really-need-in-a-day\index-2.htm" />
+    <Content Include="Webcontent\2017\09\23\how-much-do-you-really-need-in-a-day\index-3.htm" />
+    <Content Include="Webcontent\2017\09\23\how-much-do-you-really-need-in-a-day\index.htm" />
+    <Content Include="Webcontent\2017\09\27\difference-between-an-ophthalmologist-optometrist-and-optician\index-1.htm" />
+    <Content Include="Webcontent\2017\09\27\difference-between-an-ophthalmologist-optometrist-and-optician\index-2.htm" />
+    <Content Include="Webcontent\2017\09\27\difference-between-an-ophthalmologist-optometrist-and-optician\index-3.htm" />
+    <Content Include="Webcontent\2017\09\27\difference-between-an-ophthalmologist-optometrist-and-optician\index.htm" />
+    <Content Include="Webcontent\2017\09\29\make-sure-your-childs-eyes-are-ready-for-school-and-activities\index-1.htm" />
+    <Content Include="Webcontent\2017\09\29\make-sure-your-childs-eyes-are-ready-for-school-and-activities\index-2.htm" />
+    <Content Include="Webcontent\2017\09\29\make-sure-your-childs-eyes-are-ready-for-school-and-activities\index-3.htm" />
+    <Content Include="Webcontent\2017\09\29\make-sure-your-childs-eyes-are-ready-for-school-and-activities\index.htm" />
+    <Content Include="Webcontent\2018\01\21\signs-or-risk-factors-for-eye-disease\index-1.htm" />
+    <Content Include="Webcontent\2018\01\21\signs-or-risk-factors-for-eye-disease\index-2.htm" />
+    <Content Include="Webcontent\2018\01\21\signs-or-risk-factors-for-eye-disease\index-3.htm" />
+    <Content Include="Webcontent\2018\01\21\signs-or-risk-factors-for-eye-disease\index.htm" />
+    <Content Include="Webcontent\2018\02\18\thats-why-it-is-so-important-to-see-an-ophthalmologist\index-1.htm" />
+    <Content Include="Webcontent\2018\02\18\thats-why-it-is-so-important-to-see-an-ophthalmologist\index-2.htm" />
+    <Content Include="Webcontent\2018\02\18\thats-why-it-is-so-important-to-see-an-ophthalmologist\index-3.htm" />
+    <Content Include="Webcontent\2018\02\18\thats-why-it-is-so-important-to-see-an-ophthalmologist\index.htm" />
+    <Content Include="Webcontent\about-us\index.htm" />
+    <Content Include="Webcontent\author\admin\index.htm" />
+    <Content Include="Webcontent\author\admin\page\2\index.htm" />
+    <Content Include="Webcontent\before-after\index.htm" />
+    <Content Include="Webcontent\blog-grid-view\index.htm" />
+    <Content Include="Webcontent\blog-left-image-view\index.htm" />
+    <Content Include="Webcontent\blog\index.htm" />
+    <Content Include="Webcontent\blog\page\2\index.htm" />
+    <Content Include="Webcontent\cart\index.htm" />
+    <Content Include="Webcontent\category\eye-treatment\index.htm" />
+    <Content Include="Webcontent\category\glaucoma\index.htm" />
+    <Content Include="Webcontent\category\lasik\index.htm" />
+    <Content Include="Webcontent\category\ocular\index.htm" />
+    <Content Include="Webcontent\category\ophthalmology\index.htm" />
+    <Content Include="Webcontent\category\paediatric\index.htm" />
+    <Content Include="Webcontent\doctor\anna-winds\index.htm" />
+    <Content Include="Webcontent\doctor\harsy-backley\index.htm" />
+    <Content Include="Webcontent\doctor\jinnifer-bush\index.htm" />
+    <Content Include="Webcontent\doctor\john-monn\index.htm" />
+    <Content Include="Webcontent\doctor\micheal-gurg\index.htm" />
+    <Content Include="Webcontent\doctor\nick-leng\index.htm" />
+    <Content Include="Webcontent\elements\index.htm" />
+    <Content Include="Webcontent\faq\index.htm" />
+    <Content Include="Webcontent\homepage-1\index.htm" />
+    <Content Include="Webcontent\homepage-2\index.htm" />
+    <Content Include="Webcontent\index.htm" />
+    <Content Include="Webcontent\make-appointments\index.htm" />
+    <Content Include="Webcontent\optometrist-service-category\cataract-surgery\index.htm" />
+    <Content Include="Webcontent\optometrist-service-category\corneal-surgery\index.htm" />
+    <Content Include="Webcontent\optometrist-service-category\eye-treatment\index.htm" />
+    <Content Include="Webcontent\optometrist-service-category\glaucoma-surgery\index.htm" />
+    <Content Include="Webcontent\optometrist-service-category\laser-eye-surgery\index.htm" />
+    <Content Include="Webcontent\optometrist-service-category\oculoplastic-surgery\index.htm" />
+    <Content Include="Webcontent\optometrist-service-category\vision-correction\index.htm" />
+    <Content Include="Webcontent\optometrist-service-category\vitreo-retinal-surgery\index.htm" />
+    <Content Include="Webcontent\optometrist-service\comprehensive-eye-exams\index.htm" />
+    <Content Include="Webcontent\optometrist-service\drooping-eyelids\index.htm" />
+    <Content Include="Webcontent\optometrist-service\lasik-patient-quotes\index.htm" />
+    <Content Include="Webcontent\optometrist-service\letterpress-asymmetrical-2\index.htm" />
+    <Content Include="Webcontent\optometrist-service\letterpress-asymmetrical\index.htm" />
+    <Content Include="Webcontent\optometrist-service\letterpress-asymmetrica\index.htm" />
+    <Content Include="Webcontent\optometrist-service\paeditaric-ophthalmology\index.htm" />
+    <Content Include="Webcontent\optometrist-service\refractive-nature\index.htm" />
+    <Content Include="Webcontent\optometrist-service\specialized-doctors-2\index.htm" />
+    <Content Include="Webcontent\optometrist-service\specialized-doctors\index.htm" />
+    <Content Include="Webcontent\optometrist-service\surgical-procedures\index.htm" />
+    <Content Include="Webcontent\optometrist-service\transitions-lenses\index.htm" />
+    <Content Include="Webcontent\our-doctors\index.htm" />
+    <Content Include="Webcontent\product-category\accessories\index-1.htm" />
+    <Content Include="Webcontent\product-category\accessories\index-2.htm" />
+    <Content Include="Webcontent\product-category\accessories\index-3.htm" />
+    <Content Include="Webcontent\product-category\accessories\index-4.htm" />
+    <Content Include="Webcontent\product-category\accessories\index-5.htm" />
+    <Content Include="Webcontent\product-category\accessories\index-6.htm" />
+    <Content Include="Webcontent\product-category\accessories\index-7.htm" />
+    <Content Include="Webcontent\product-category\accessories\index.htm" />
+    <Content Include="Webcontent\product-category\clothing\index.htm" />
+    <Content Include="Webcontent\product-category\decor\index.htm" />
+    <Content Include="Webcontent\product-category\hoodies\index-1.htm" />
+    <Content Include="Webcontent\product-category\hoodies\index.htm" />
+    <Content Include="Webcontent\product-category\music\index-1.htm" />
+    <Content Include="Webcontent\product-category\music\index-2.htm" />
+    <Content Include="Webcontent\product-category\music\index-3.htm" />
+    <Content Include="Webcontent\product-category\music\index-4.htm" />
+    <Content Include="Webcontent\product-category\music\index.htm" />
+    <Content Include="Webcontent\product-category\tshirts\index-1.htm" />
+    <Content Include="Webcontent\product-category\tshirts\index-2.htm" />
+    <Content Include="Webcontent\product-category\tshirts\index-3.htm" />
+    <Content Include="Webcontent\product-category\tshirts\index-4.htm" />
+    <Content Include="Webcontent\product-category\tshirts\index-5.htm" />
+    <Content Include="Webcontent\product-category\tshirts\index-6.htm" />
+    <Content Include="Webcontent\product-category\tshirts\index-7.htm" />
+    <Content Include="Webcontent\product-category\tshirts\index-8.htm" />
+    <Content Include="Webcontent\product-category\tshirts\index-9.htm" />
+    <Content Include="Webcontent\product-category\tshirts\index.htm" />
+    <Content Include="Webcontent\product\album\index-1.htm" />
+    <Content Include="Webcontent\product\album\index.htm" />
+    <Content Include="Webcontent\product\beanie-with-logo\index-1.htm" />
+    <Content Include="Webcontent\product\beanie-with-logo\index-2.htm" />
+    <Content Include="Webcontent\product\beanie-with-logo\index.htm" />
+    <Content Include="Webcontent\product\cap\index-1.htm" />
+    <Content Include="Webcontent\product\cap\index-2.htm" />
+    <Content Include="Webcontent\product\cap\index.htm" />
+    <Content Include="Webcontent\product\hoodie-with-zipper\index.htm" />
+    <Content Include="Webcontent\product\logo-collection\index.htm" />
+    <Content Include="Webcontent\product\long-sleeve-tee\index-1.htm" />
+    <Content Include="Webcontent\product\long-sleeve-tee\index-2.htm" />
+    <Content Include="Webcontent\product\long-sleeve-tee\index.htm" />
+    <Content Include="Webcontent\product\polo\index-1.htm" />
+    <Content Include="Webcontent\product\polo\index-2.htm" />
+    <Content Include="Webcontent\product\polo\index.htm" />
+    <Content Include="Webcontent\product\single\index-1.htm" />
+    <Content Include="Webcontent\product\single\index.htm" />
+    <Content Include="Webcontent\product\sunglasses\index-1.htm" />
+    <Content Include="Webcontent\product\sunglasses\index-2.htm" />
+    <Content Include="Webcontent\product\sunglasses\index.htm" />
+    <Content Include="Webcontent\product\t-shirt-with-logo\index-1.htm" />
+    <Content Include="Webcontent\product\t-shirt-with-logo\index-2.htm" />
+    <Content Include="Webcontent\product\t-shirt-with-logo\index.htm" />
+    <Content Include="Webcontent\product\wordpress-pennant\index.htm" />
+    <Content Include="Webcontent\saibabamain.jpg" />
+    <Content Include="Webcontent\services-style-1\index.htm" />
+    <Content Include="Webcontent\services-style-2\index.htm" />
+    <Content Include="Webcontent\services-style-3\index.htm" />
+    <Content Include="Webcontent\shop\index-1.htm" />
+    <Content Include="Webcontent\shop\index-10.htm" />
+    <Content Include="Webcontent\shop\index-11.htm" />
+    <Content Include="Webcontent\shop\index-12.htm" />
+    <Content Include="Webcontent\shop\index-13.htm" />
+    <Content Include="Webcontent\shop\index-14.htm" />
+    <Content Include="Webcontent\shop\index-15.htm" />
+    <Content Include="Webcontent\shop\index-16.htm" />
+    <Content Include="Webcontent\shop\index-17.htm" />
+    <Content Include="Webcontent\shop\index-18.htm" />
+    <Content Include="Webcontent\shop\index-19.htm" />
+    <Content Include="Webcontent\shop\index-2.htm" />
+    <Content Include="Webcontent\shop\index-20.htm" />
+    <Content Include="Webcontent\shop\index-21.htm" />
+    <Content Include="Webcontent\shop\index-3.htm" />
+    <Content Include="Webcontent\shop\index-4.htm" />
+    <Content Include="Webcontent\shop\index-5.htm" />
+    <Content Include="Webcontent\shop\index-6.htm" />
+    <Content Include="Webcontent\shop\index-7.htm" />
+    <Content Include="Webcontent\shop\index-8.htm" />
+    <Content Include="Webcontent\shop\index-9.htm" />
+    <Content Include="Webcontent\shop\index.htm" />
+    <Content Include="Webcontent\tag\geometrical\index.htm" />
+    <Content Include="Webcontent\treatments\index.htm" />
+    <Content Include="Webcontent\wp-admin\admin-ajax.css" />
+    <Content Include="Webcontent\wp-content\plugins\booked-frontend-agents\css\styles.css" />
+    <Content Include="Webcontent\wp-content\plugins\booked-frontend-agents\js\functions.js" />
+    <Content Include="Webcontent\wp-content\plugins\booked-woocommerce-payments\css\frontend-style.css" />
+    <Content Include="Webcontent\wp-content\plugins\booked-woocommerce-payments\js\frontend-functions.js" />
+    <Content Include="Webcontent\wp-content\plugins\booked\assets\css\animations.css" />
+    <Content Include="Webcontent\wp-content\plugins\booked\assets\css\icons.css" />
+    <Content Include="Webcontent\wp-content\plugins\booked\assets\css\responsive.css" />
+    <Content Include="Webcontent\wp-content\plugins\booked\assets\css\styles.css" />
+    <Content Include="Webcontent\wp-content\plugins\booked\assets\js\functions.js" />
+    <Content Include="Webcontent\wp-content\plugins\booked\assets\js\spin.jquery.js" />
+    <Content Include="Webcontent\wp-content\plugins\booked\assets\js\spin.min.js" />
+    <Content Include="Webcontent\wp-content\plugins\booked\assets\js\tooltipster\css\themes\tooltipster-light.css" />
+    <Content Include="Webcontent\wp-content\plugins\booked\assets\js\tooltipster\css\tooltipster.css" />
+    <Content Include="Webcontent\wp-content\plugins\booked\assets\js\tooltipster\js\jquery.tooltipster.min.js" />
+    <Content Include="Webcontent\wp-content\plugins\booking-calendar\css\booking.css" />
+    <Content Include="Webcontent\wp-content\plugins\booking-calendar\css\effects.css" />
+    <Content Include="Webcontent\wp-content\plugins\booking-calendar\css\font-awesome\font-awesome.css" />
+    <Content Include="Webcontent\wp-content\plugins\booking-calendar\css\font-awesome\fonts\fontawesome-webfont.svg" />
+    <Content Include="Webcontent\wp-content\plugins\booking-calendar\css\images\calendar.png" />
+    <Content Include="Webcontent\wp-content\plugins\booking-calendar\css\images\ui-icons_222222_256x240.png" />
+    <Content Include="Webcontent\wp-content\plugins\booking-calendar\css\jquery-ui.css" />
+    <Content Include="Webcontent\wp-content\plugins\booking-calendar\css\style.css" />
+    <Content Include="Webcontent\wp-content\plugins\booking-calendar\js\booking.js" />
+    <Content Include="Webcontent\wp-content\plugins\booking-calendar\js\jquery.scrollTo-min.js" />
+    <Content Include="Webcontent\wp-content\plugins\booking-calendar\js\script.js" />
+    <Content Include="Webcontent\wp-content\plugins\dk-pricr-responsive-pricing-table\inc\css\rpt_style.min.css" />
+    <Content Include="Webcontent\wp-content\plugins\dk-pricr-responsive-pricing-table\inc\js\rpt.min.js" />
+    <Content Include="Webcontent\wp-content\plugins\js_composer\assets\css\js_composer.min.css" />
+    <Content Include="Webcontent\wp-content\plugins\js_composer\assets\css\js_composer_tta.min.css" />
+    <Content Include="Webcontent\wp-content\plugins\js_composer\assets\fonts\vc_grid\vc_grid_v1.svg" />
+    <Content Include="Webcontent\wp-content\plugins\js_composer\assets\fonts\vc_icons_v2\fonts\vcpb-plugin-icons.svg" />
+    <Content Include="Webcontent\wp-content\plugins\js_composer\assets\images\flickr.png" />
+    <Content Include="Webcontent\wp-content\plugins\js_composer\assets\images\icons\address-book.png" />
+    <Content Include="Webcontent\wp-content\plugins\js_composer\assets\images\icons\alarm-clock.png" />
+    <Content Include="Webcontent\wp-content\plugins\js_composer\assets\images\icons\anchor.png" />
+    <Content Include="Webcontent\wp-content\plugins\js_composer\assets\images\icons\application-image.png" />
+    <Content Include="Webcontent\wp-content\plugins\js_composer\assets\images\icons\arrow.png" />
+    <Content Include="Webcontent\wp-content\plugins\js_composer\assets\images\icons\asterisk.png" />
+    <Content Include="Webcontent\wp-content\plugins\js_composer\assets\images\icons\auction-hammer.png" />
+    <Content Include="Webcontent\wp-content\plugins\js_composer\assets\images\icons\balloon-buzz.png" />
+    <Content Include="Webcontent\wp-content\plugins\js_composer\assets\images\icons\balloon-facebook.png" />
+    <Content Include="Webcontent\wp-content\plugins\js_composer\assets\images\icons\balloon-twitter.png" />
+    <Content Include="Webcontent\wp-content\plugins\js_composer\assets\images\icons\balloon.png" />
+    <Content Include="Webcontent\wp-content\plugins\js_composer\assets\images\icons\battery-full.png" />
+    <Content Include="Webcontent\wp-content\plugins\js_composer\assets\images\icons\binocular.png" />
+    <Content Include="Webcontent\wp-content\plugins\js_composer\assets\images\icons\blue-document-excel.png" />
+    <Content Include="Webcontent\wp-content\plugins\js_composer\assets\images\icons\blue-document-image.png" />
+    <Content Include="Webcontent\wp-content\plugins\js_composer\assets\images\icons\blue-document-music.png" />
+    <Content Include="Webcontent\wp-content\plugins\js_composer\assets\images\icons\blue-document-office.png" />
+    <Content Include="Webcontent\wp-content\plugins\js_composer\assets\images\icons\blue-document-pdf.png" />
+    <Content Include="Webcontent\wp-content\plugins\js_composer\assets\images\icons\blue-document-powerpoint.png" />
+    <Content Include="Webcontent\wp-content\plugins\js_composer\assets\images\icons\blue-document-word.png" />
+    <Content Include="Webcontent\wp-content\plugins\js_composer\assets\images\icons\bookmark.png" />
+    <Content Include="Webcontent\wp-content\plugins\js_composer\assets\images\icons\camcorder.png" />
+    <Content Include="Webcontent\wp-content\plugins\js_composer\assets\images\icons\camera.png" />
+    <Content Include="Webcontent\wp-content\plugins\js_composer\assets\images\icons\chart-pie.png" />
+    <Content Include="Webcontent\wp-content\plugins\js_composer\assets\images\icons\chart.png" />
+    <Content Include="Webcontent\wp-content\plugins\js_composer\assets\images\icons\clock.png" />
+    <Content Include="Webcontent\wp-content\plugins\js_composer\assets\images\icons\control.png" />
+    <Content Include="Webcontent\wp-content\plugins\js_composer\assets\images\icons\fire.png" />
+    <Content Include="Webcontent\wp-content\plugins\js_composer\assets\images\icons\heart.png" />
+    <Content Include="Webcontent\wp-content\plugins\js_composer\assets\images\icons\mail.png" />
+    <Content Include="Webcontent\wp-content\plugins\js_composer\assets\images\icons\plus-shield.png" />
+    <Content Include="Webcontent\wp-content\plugins\js_composer\assets\images\icons\video.png" />
+    <Content Include="Webcontent\wp-content\plugins\js_composer\assets\images\spinner.gif" />
+    <Content Include="Webcontent\wp-content\plugins\js_composer\assets\images\toggle_close.png" />
+    <Content Include="Webcontent\wp-content\plugins\js_composer\assets\images\toggle_open.png" />
+    <Content Include="Webcontent\wp-content\plugins\js_composer\assets\js\dist\js_composer_front.min.js" />
+    <Content Include="Webcontent\wp-content\plugins\js_composer\assets\js\vendors\woocommerce-add-to-cart.js" />
+    <Content Include="Webcontent\wp-content\plugins\js_composer\assets\lib\bower\flexslider\flexslider.min.css" />
+    <Content Include="Webcontent\wp-content\plugins\js_composer\assets\lib\bower\flexslider\fonts\flexslider-icon.svg" />
+    <Content Include="Webcontent\wp-content\plugins\js_composer\assets\lib\bower\flexslider\jquery.flexslider-min.js" />
+    <Content Include="Webcontent\wp-content\plugins\js_composer\assets\lib\bower\font-awesome\css\font-awesome.min.css" />
+    <Content Include="Webcontent\wp-content\plugins\js_composer\assets\lib\bower\font-awesome\fonts\fontawesome-webfont.svg" />
+    <Content Include="Webcontent\wp-content\plugins\js_composer\assets\lib\bower\isotope\dist\isotope.pkgd.min.js" />
+    <Content Include="Webcontent\wp-content\plugins\js_composer\assets\lib\prettyphoto\css\prettyPhoto.min.css" />
+    <Content Include="Webcontent\wp-content\plugins\js_composer\assets\lib\prettyphoto\images\prettyPhoto\dark_rounded\btnNext.png" />
+    <Content Include="Webcontent\wp-content\plugins\js_composer\assets\lib\prettyphoto\images\prettyPhoto\dark_rounded\btnPrevious.png" />
+    <Content Include="Webcontent\wp-content\plugins\js_composer\assets\lib\prettyphoto\images\prettyPhoto\dark_rounded\contentPattern.png" />
+    <Content Include="Webcontent\wp-content\plugins\js_composer\assets\lib\prettyphoto\images\prettyPhoto\dark_rounded\loader.gif" />
+    <Content Include="Webcontent\wp-content\plugins\js_composer\assets\lib\prettyphoto\images\prettyPhoto\dark_rounded\sprite.png" />
+    <Content Include="Webcontent\wp-content\plugins\js_composer\assets\lib\prettyphoto\images\prettyPhoto\dark_square\btnNext.png" />
+    <Content Include="Webcontent\wp-content\plugins\js_composer\assets\lib\prettyphoto\images\prettyPhoto\dark_square\btnPrevious.png" />
+    <Content Include="Webcontent\wp-content\plugins\js_composer\assets\lib\prettyphoto\images\prettyPhoto\dark_square\loader.gif" />
+    <Content Include="Webcontent\wp-content\plugins\js_composer\assets\lib\prettyphoto\images\prettyPhoto\dark_square\sprite.png" />
+    <Content Include="Webcontent\wp-content\plugins\js_composer\assets\lib\prettyphoto\images\prettyPhoto\default\default_thumb.png" />
+    <Content Include="Webcontent\wp-content\plugins\js_composer\assets\lib\prettyphoto\images\prettyPhoto\default\loader.gif" />
+    <Content Include="Webcontent\wp-content\plugins\js_composer\assets\lib\prettyphoto\images\prettyPhoto\default\sprite.png" />
+    <Content Include="Webcontent\wp-content\plugins\js_composer\assets\lib\prettyphoto\images\prettyPhoto\default\sprite_next.png" />
+    <Content Include="Webcontent\wp-content\plugins\js_composer\assets\lib\prettyphoto\images\prettyPhoto\default\sprite_prev.png" />
+    <Content Include="Webcontent\wp-content\plugins\js_composer\assets\lib\prettyphoto\images\prettyPhoto\default\sprite_x.png" />
+    <Content Include="Webcontent\wp-content\plugins\js_composer\assets\lib\prettyphoto\images\prettyPhoto\default\sprite_y.png" />
+    <Content Include="Webcontent\wp-content\plugins\js_composer\assets\lib\prettyphoto\images\prettyPhoto\facebook\btnNext.png" />
+    <Content Include="Webcontent\wp-content\plugins\js_composer\assets\lib\prettyphoto\images\prettyPhoto\facebook\btnPrevious.png" />
+    <Content Include="Webcontent\wp-content\plugins\js_composer\assets\lib\prettyphoto\images\prettyPhoto\facebook\contentPatternBottom.png" />
+    <Content Include="Webcontent\wp-content\plugins\js_composer\assets\lib\prettyphoto\images\prettyPhoto\facebook\contentPatternLeft.png" />
+    <Content Include="Webcontent\wp-content\plugins\js_composer\assets\lib\prettyphoto\images\prettyPhoto\facebook\contentPatternRight.png" />
+    <Content Include="Webcontent\wp-content\plugins\js_composer\assets\lib\prettyphoto\images\prettyPhoto\facebook\contentPatternTop.png" />
+    <Content Include="Webcontent\wp-content\plugins\js_composer\assets\lib\prettyphoto\images\prettyPhoto\facebook\default_thumbnail.gif" />
+    <Content Include="Webcontent\wp-content\plugins\js_composer\assets\lib\prettyphoto\images\prettyPhoto\facebook\loader.gif" />
+    <Content Include="Webcontent\wp-content\plugins\js_composer\assets\lib\prettyphoto\images\prettyPhoto\facebook\sprite.png" />
+    <Content Include="Webcontent\wp-content\plugins\js_composer\assets\lib\prettyphoto\images\prettyPhoto\light_rounded\btnNext.png" />
+    <Content Include="Webcontent\wp-content\plugins\js_composer\assets\lib\prettyphoto\images\prettyPhoto\light_rounded\btnPrevious.png" />
+    <Content Include="Webcontent\wp-content\plugins\js_composer\assets\lib\prettyphoto\images\prettyPhoto\light_rounded\loader.gif" />
+    <Content Include="Webcontent\wp-content\plugins\js_composer\assets\lib\prettyphoto\images\prettyPhoto\light_rounded\sprite.png" />
+    <Content Include="Webcontent\wp-content\plugins\js_composer\assets\lib\prettyphoto\images\prettyPhoto\light_square\btnNext.png" />
+    <Content Include="Webcontent\wp-content\plugins\js_composer\assets\lib\prettyphoto\images\prettyPhoto\light_square\btnPrevious.png" />
+    <Content Include="Webcontent\wp-content\plugins\js_composer\assets\lib\prettyphoto\images\prettyPhoto\light_square\sprite.png" />
+    <Content Include="Webcontent\wp-content\plugins\js_composer\assets\lib\vc-tta-autoplay\vc-tta-autoplay.min.js" />
+    <Content Include="Webcontent\wp-content\plugins\js_composer\assets\lib\vc_accordion\vc-accordion.min.js" />
+    <Content Include="Webcontent\wp-content\plugins\js_composer\assets\lib\vc_tabs\vc-tabs.min.js" />
+    <Content Include="Webcontent\wp-content\plugins\js_composer\assets\lib\vc_waypoints\vc-waypoints.min.js" />
+    <Content Include="Webcontent\wp-content\plugins\js_composer\assets\vc\alert.png" />
+    <Content Include="Webcontent\wp-content\plugins\js_composer\assets\vc\blur.svg" />
+    <Content Include="Webcontent\wp-content\plugins\js_composer\assets\vc\exclamation.png" />
+    <Content Include="Webcontent\wp-content\plugins\js_composer\assets\vc\info.png" />
+    <Content Include="Webcontent\wp-content\plugins\js_composer\assets\vc\remove.png" />
+    <Content Include="Webcontent\wp-content\plugins\js_composer\assets\vc\tick.png" />
+    <Content Include="Webcontent\wp-content\plugins\revslider\public\assets\assets\coloredbg.png" />
+    <Content Include="Webcontent\wp-content\plugins\revslider\public\assets\assets\gridtile.png" />
+    <Content Include="Webcontent\wp-content\plugins\revslider\public\assets\assets\gridtile_3x3.png" />
+    <Content Include="Webcontent\wp-content\plugins\revslider\public\assets\assets\gridtile_3x3_white.png" />
+    <Content Include="Webcontent\wp-content\plugins\revslider\public\assets\assets\gridtile_white.png" />
+    <Content Include="Webcontent\wp-content\plugins\revslider\public\assets\assets\loader.gif" />
+    <Content Include="Webcontent\wp-content\plugins\revslider\public\assets\css\closedhand.cur" />
+    <Content Include="Webcontent\wp-content\plugins\revslider\public\assets\css\openhand.cur" />
+    <Content Include="Webcontent\wp-content\plugins\revslider\public\assets\css\settings.css" />
+    <Content Include="Webcontent\wp-content\plugins\revslider\public\assets\fonts\font-awesome\css\font-awesome.css" />
+    <Content Include="Webcontent\wp-content\plugins\revslider\public\assets\fonts\font-awesome\fonts\fontawesome-webfont.svg" />
+    <Content Include="Webcontent\wp-content\plugins\revslider\public\assets\fonts\revicons\revicons.svg" />
+    <Content Include="Webcontent\wp-content\plugins\revslider\public\assets\js\jquery.themepunch.revolution.min.js" />
+    <Content Include="Webcontent\wp-content\plugins\revslider\public\assets\js\jquery.themepunch.tools.min.js" />
+    <Content Include="Webcontent\wp-content\plugins\revslider\public\assets\js\js1.js" />
+    <Content Include="Webcontent\wp-content\plugins\revslider\public\assets\js\js2.js" />
+    <Content Include="Webcontent\wp-content\plugins\revslider\public\assets\js\js3.js" />
+    <Content Include="Webcontent\wp-content\plugins\revslider\public\assets\js\js4.js" />
+    <Content Include="Webcontent\wp-content\plugins\revslider\public\assets\js\js5.js" />
+    <Content Include="Webcontent\wp-content\plugins\revslider\public\assets\js\js6.js" />
+    <Content Include="Webcontent\wp-content\plugins\themestek-optico-extras\js\jquery-resize.min.js" />
+    <Content Include="Webcontent\wp-content\plugins\twenty20\assets\css\twenty20.css" />
+    <Content Include="Webcontent\wp-content\plugins\twenty20\assets\js\jquery.event.move.js" />
+    <Content Include="Webcontent\wp-content\plugins\twenty20\assets\js\jquery.twenty20.js" />
+    <Content Include="Webcontent\wp-content\plugins\woo-gutenberg-products-block\build\style.css" />
+    <Content Include="Webcontent\wp-content\plugins\woocommerce-gateway-paypal-express-checkout\assets\css\wc-gateway-ppec-frontend-cart.css" />
+    <Content Include="Webcontent\wp-content\plugins\woocommerce-product-archive-customiser\assets\css\layout.css" />
+    <Content Include="Webcontent\wp-content\plugins\woocommerce-product-archive-customiser\assets\css\pac.css" />
+    <Content Include="Webcontent\wp-content\plugins\woocommerce\assets\css\photoswipe\default-skin\default-skin.css" />
+    <Content Include="Webcontent\wp-content\plugins\woocommerce\assets\css\photoswipe\default-skin\default-skin.png" />
+    <Content Include="Webcontent\wp-content\plugins\woocommerce\assets\css\photoswipe\default-skin\default-skin.svg" />
+    <Content Include="Webcontent\wp-content\plugins\woocommerce\assets\css\photoswipe\default-skin\preloader.gif" />
+    <Content Include="Webcontent\wp-content\plugins\woocommerce\assets\css\photoswipe\photoswipe.css" />
+    <Content Include="Webcontent\wp-content\plugins\woocommerce\assets\css\select2.css" />
+    <Content Include="Webcontent\wp-content\plugins\woocommerce\assets\css\woocommerce-layout.css" />
+    <Content Include="Webcontent\wp-content\plugins\woocommerce\assets\css\woocommerce-smallscreen.css" />
+    <Content Include="Webcontent\wp-content\plugins\woocommerce\assets\css\woocommerce.css" />
+    <Content Include="Webcontent\wp-content\plugins\woocommerce\assets\fonts\star.svg" />
+    <Content Include="Webcontent\wp-content\plugins\woocommerce\assets\fonts\WooCommerce.svg" />
+    <Content Include="Webcontent\wp-content\plugins\woocommerce\assets\images\icons\credit-cards\amex.svg" />
+    <Content Include="Webcontent\wp-content\plugins\woocommerce\assets\images\icons\credit-cards\diners.svg" />
+    <Content Include="Webcontent\wp-content\plugins\woocommerce\assets\images\icons\credit-cards\discover.svg" />
+    <Content Include="Webcontent\wp-content\plugins\woocommerce\assets\images\icons\credit-cards\jcb.svg" />
+    <Content Include="Webcontent\wp-content\plugins\woocommerce\assets\images\icons\credit-cards\laser.svg" />
+    <Content Include="Webcontent\wp-content\plugins\woocommerce\assets\images\icons\credit-cards\maestro.svg" />
+    <Content Include="Webcontent\wp-content\plugins\woocommerce\assets\images\icons\credit-cards\mastercard.svg" />
+    <Content Include="Webcontent\wp-content\plugins\woocommerce\assets\images\icons\credit-cards\visa.svg" />
+    <Content Include="Webcontent\wp-content\plugins\woocommerce\assets\images\icons\loader.svg" />
+    <Content Include="Webcontent\wp-content\plugins\woocommerce\assets\js\frontend\add-to-cart.min.js" />
+    <Content Include="Webcontent\wp-content\plugins\woocommerce\assets\js\frontend\address-i18n.min.js" />
+    <Content Include="Webcontent\wp-content\plugins\woocommerce\assets\js\frontend\cart-fragments.min.js" />
+    <Content Include="Webcontent\wp-content\plugins\woocommerce\assets\js\frontend\cart.min.js" />
+    <Content Include="Webcontent\wp-content\plugins\woocommerce\assets\js\frontend\country-select.min.js" />
+    <Content Include="Webcontent\wp-content\plugins\woocommerce\assets\js\frontend\single-product.min.js" />
+    <Content Include="Webcontent\wp-content\plugins\woocommerce\assets\js\frontend\woocommerce.min.js" />
+    <Content Include="Webcontent\wp-content\plugins\woocommerce\assets\js\jquery-blockui\jquery.blockUI.min.js" />
+    <Content Include="Webcontent\wp-content\plugins\woocommerce\assets\js\js-cookie\js.cookie.min.js" />
+    <Content Include="Webcontent\wp-content\plugins\woocommerce\assets\js\photoswipe\photoswipe-ui-default.min.js" />
+    <Content Include="Webcontent\wp-content\plugins\woocommerce\assets\js\photoswipe\photoswipe.min.js" />
+    <Content Include="Webcontent\wp-content\plugins\woocommerce\assets\js\selectWoo\selectWoo.full.min.js" />
+    <Content Include="Webcontent\wp-content\themes\optico\css\bootstrap-theme.min.css" />
+    <Content Include="Webcontent\wp-content\themes\optico\css\bootstrap.min.css" />
+    <Content Include="Webcontent\wp-content\themes\optico\css\core.css" />
+    <Content Include="Webcontent\wp-content\themes\optico\css\master.css" />
+    <Content Include="Webcontent\wp-content\themes\optico\css\multi-columns-row.css" />
+    <Content Include="Webcontent\wp-content\themes\optico\css\responsive.css" />
+    <Content Include="Webcontent\wp-content\themes\optico\images\404-bg.jpg" />
+    <Content Include="Webcontent\wp-content\themes\optico\images\saibabaeyehospital.jpg" />
+    <Content Include="Webcontent\wp-content\themes\optico\images\sbhlogo.png" />
+    <Content Include="Webcontent\wp-content\themes\optico\js\scripts.js" />
+    <Content Include="Webcontent\wp-content\themes\optico\libraries\chrisbracco-tooltip\chrisbracco-tooltip.min.css" />
+    <Content Include="Webcontent\wp-content\themes\optico\libraries\jquery-circle-progress\circle-progress.min.js" />
+    <Content Include="Webcontent\wp-content\themes\optico\libraries\jquery-mousewheel\jquery.mousewheel.min.js" />
+    <Content Include="Webcontent\wp-content\themes\optico\libraries\numinate\numinate.min.js" />
+    <Content Include="Webcontent\wp-content\themes\optico\libraries\perfect-scrollbar\perfect-scrollbar.jquery.min.js" />
+    <Content Include="Webcontent\wp-content\themes\optico\libraries\perfect-scrollbar\perfect-scrollbar.min.css" />
+    <Content Include="Webcontent\wp-content\themes\optico\libraries\prettyphoto\js\jquery.prettyPhoto.js" />
+    <Content Include="Webcontent\wp-content\themes\optico\libraries\select2\select2.min.css" />
+    <Content Include="Webcontent\wp-content\themes\optico\libraries\select2\select2.min.js" />
+    <Content Include="Webcontent\wp-content\themes\optico\libraries\slick\ajax-loader.gif" />
+    <Content Include="Webcontent\wp-content\themes\optico\libraries\slick\fonts\slick.svg" />
+    <Content Include="Webcontent\wp-content\themes\optico\libraries\slick\slick-theme.css" />
+    <Content Include="Webcontent\wp-content\themes\optico\libraries\slick\slick.css" />
+    <Content Include="Webcontent\wp-content\themes\optico\libraries\slick\slick.min.js" />
+    <Content Include="Webcontent\wp-content\themes\optico\libraries\sticky-kit\jquery.sticky-kit.min.js" />
+    <Content Include="Webcontent\wp-content\themes\optico\libraries\themify-icons\fonts\themify.svg" />
+    <Content Include="Webcontent\wp-content\themes\optico\libraries\themify-icons\themify-icons.css" />
+    <Content Include="Webcontent\wp-content\themes\optico\libraries\ts-optico-icons\css\ts-optico-icons.css" />
+    <Content Include="Webcontent\wp-content\themes\optico\libraries\ts-optico-icons\font\ts-optico-icons.svg" />
+    <Content Include="Webcontent\wp-content\themes\optico\libraries\ts-optometrist-icons\font\flaticon.css" />
+    <Content Include="Webcontent\wp-content\themes\optico\libraries\ts-optometrist-icons\font\Flaticon.svg" />
+    <Content Include="Webcontent\wp-content\themes\optico\libraries\waypoints\jquery.waypoints.min.js" />
+    <Content Include="Webcontent\wp-content\uploads\sites\3\2017\12\shop-01-100x100.jpg" />
+    <Content Include="Webcontent\wp-content\uploads\sites\3\2017\12\shop-01-150x150.jpg" />
+    <Content Include="Webcontent\wp-content\uploads\sites\3\2017\12\shop-01-300x300.jpg" />
+    <Content Include="Webcontent\wp-content\uploads\sites\3\2017\12\shop-01-600x600.jpg" />
+    <Content Include="Webcontent\wp-content\uploads\sites\3\2017\12\shop-01-768x768.jpg" />
+    <Content Include="Webcontent\wp-content\uploads\sites\3\2017\12\shop-01-800x800.jpg" />
+    <Content Include="Webcontent\wp-content\uploads\sites\3\2017\12\shop-01.jpg" />
+    <Content Include="Webcontent\wp-content\uploads\sites\3\2017\12\shop-02-100x100.jpg" />
+    <Content Include="Webcontent\wp-content\uploads\sites\3\2017\12\shop-02-150x150.jpg" />
+    <Content Include="Webcontent\wp-content\uploads\sites\3\2017\12\shop-02-300x300.jpg" />
+    <Content Include="Webcontent\wp-content\uploads\sites\3\2017\12\shop-02-600x600.jpg" />
+    <Content Include="Webcontent\wp-content\uploads\sites\3\2017\12\shop-02-768x768.jpg" />
+    <Content Include="Webcontent\wp-content\uploads\sites\3\2017\12\shop-02-800x800.jpg" />
+    <Content Include="Webcontent\wp-content\uploads\sites\3\2017\12\shop-02.jpg" />
+    <Content Include="Webcontent\wp-content\uploads\sites\3\2017\12\shop-03-100x100.jpg" />
+    <Content Include="Webcontent\wp-content\uploads\sites\3\2017\12\shop-03-150x150.jpg" />
+    <Content Include="Webcontent\wp-content\uploads\sites\3\2017\12\shop-03-300x300.jpg" />
+    <Content Include="Webcontent\wp-content\uploads\sites\3\2017\12\shop-03-600x600.jpg" />
+    <Content Include="Webcontent\wp-content\uploads\sites\3\2017\12\shop-03-768x768.jpg" />
+    <Content Include="Webcontent\wp-content\uploads\sites\3\2017\12\shop-03-800x800.jpg" />
+    <Content Include="Webcontent\wp-content\uploads\sites\3\2017\12\shop-03.jpg" />
+    <Content Include="Webcontent\wp-content\uploads\sites\3\2017\12\shop-04-100x100.jpg" />
+    <Content Include="Webcontent\wp-content\uploads\sites\3\2017\12\shop-04-150x150.jpg" />
+    <Content Include="Webcontent\wp-content\uploads\sites\3\2017\12\shop-04-300x300.jpg" />
+    <Content Include="Webcontent\wp-content\uploads\sites\3\2017\12\shop-04-600x600.jpg" />
+    <Content Include="Webcontent\wp-content\uploads\sites\3\2017\12\shop-04-768x768.jpg" />
+    <Content Include="Webcontent\wp-content\uploads\sites\3\2017\12\shop-04-800x800.jpg" />
+    <Content Include="Webcontent\wp-content\uploads\sites\3\2017\12\shop-04.jpg" />
+    <Content Include="Webcontent\wp-content\uploads\sites\3\2017\12\shop-05-100x100.jpg" />
+    <Content Include="Webcontent\wp-content\uploads\sites\3\2017\12\shop-05-150x150.jpg" />
+    <Content Include="Webcontent\wp-content\uploads\sites\3\2017\12\shop-05-300x300.jpg" />
+    <Content Include="Webcontent\wp-content\uploads\sites\3\2017\12\shop-05-600x600.jpg" />
+    <Content Include="Webcontent\wp-content\uploads\sites\3\2017\12\shop-05-768x768.jpg" />
+    <Content Include="Webcontent\wp-content\uploads\sites\3\2017\12\shop-05-800x800.jpg" />
+    <Content Include="Webcontent\wp-content\uploads\sites\3\2017\12\shop-05.jpg" />
+    <Content Include="Webcontent\wp-content\uploads\sites\3\2017\12\shop-06-100x100.jpg" />
+    <Content Include="Webcontent\wp-content\uploads\sites\3\2017\12\shop-06-150x150.jpg" />
+    <Content Include="Webcontent\wp-content\uploads\sites\3\2017\12\shop-06-300x300.jpg" />
+    <Content Include="Webcontent\wp-content\uploads\sites\3\2017\12\shop-06-600x600.jpg" />
+    <Content Include="Webcontent\wp-content\uploads\sites\3\2017\12\shop-06-768x768.jpg" />
+    <Content Include="Webcontent\wp-content\uploads\sites\3\2017\12\shop-06-800x800.jpg" />
+    <Content Include="Webcontent\wp-content\uploads\sites\3\2017\12\shop-06.jpg" />
+    <Content Include="Webcontent\wp-content\uploads\sites\3\2017\12\shop-07-100x100.jpg" />
+    <Content Include="Webcontent\wp-content\uploads\sites\3\2017\12\shop-07-150x150.jpg" />
+    <Content Include="Webcontent\wp-content\uploads\sites\3\2017\12\shop-07-300x300.jpg" />
+    <Content Include="Webcontent\wp-content\uploads\sites\3\2017\12\shop-07-600x600.jpg" />
+    <Content Include="Webcontent\wp-content\uploads\sites\3\2017\12\shop-07-768x768.jpg" />
+    <Content Include="Webcontent\wp-content\uploads\sites\3\2017\12\shop-07-800x800.jpg" />
+    <Content Include="Webcontent\wp-content\uploads\sites\3\2017\12\shop-07.jpg" />
+    <Content Include="Webcontent\wp-content\uploads\sites\3\2017\12\shop-08-100x100.jpg" />
+    <Content Include="Webcontent\wp-content\uploads\sites\3\2017\12\shop-08-150x150.jpg" />
+    <Content Include="Webcontent\wp-content\uploads\sites\3\2017\12\shop-08-300x300.jpg" />
+    <Content Include="Webcontent\wp-content\uploads\sites\3\2017\12\shop-08-600x600.jpg" />
+    <Content Include="Webcontent\wp-content\uploads\sites\3\2017\12\shop-08-768x768.jpg" />
+    <Content Include="Webcontent\wp-content\uploads\sites\3\2017\12\shop-08-800x800.jpg" />
+    <Content Include="Webcontent\wp-content\uploads\sites\3\2017\12\shop-08.jpg" />
+    <Content Include="Webcontent\wp-content\uploads\sites\3\2017\12\shop-09-100x100.jpg" />
+    <Content Include="Webcontent\wp-content\uploads\sites\3\2017\12\shop-09-150x150.jpg" />
+    <Content Include="Webcontent\wp-content\uploads\sites\3\2017\12\shop-09-300x300.jpg" />
+    <Content Include="Webcontent\wp-content\uploads\sites\3\2017\12\shop-09-600x600.jpg" />
+    <Content Include="Webcontent\wp-content\uploads\sites\3\2017\12\shop-09-768x768.jpg" />
+    <Content Include="Webcontent\wp-content\uploads\sites\3\2017\12\shop-09-800x800.jpg" />
+    <Content Include="Webcontent\wp-content\uploads\sites\3\2017\12\shop-09.jpg" />
+    <Content Include="Webcontent\wp-content\uploads\sites\3\2017\12\shop-11-100x100.jpg" />
+    <Content Include="Webcontent\wp-content\uploads\sites\3\2017\12\shop-11-150x150.jpg" />
+    <Content Include="Webcontent\wp-content\uploads\sites\3\2017\12\shop-11-300x300.jpg" />
+    <Content Include="Webcontent\wp-content\uploads\sites\3\2017\12\shop-11-600x600.jpg" />
+    <Content Include="Webcontent\wp-content\uploads\sites\3\2017\12\shop-11-768x768.jpg" />
+    <Content Include="Webcontent\wp-content\uploads\sites\3\2017\12\shop-11-800x800.jpg" />
+    <Content Include="Webcontent\wp-content\uploads\sites\3\2017\12\shop-11.jpg" />
+    <Content Include="Webcontent\wp-content\uploads\sites\3\2017\12\shop-12-100x100.jpg" />
+    <Content Include="Webcontent\wp-content\uploads\sites\3\2017\12\shop-12-150x150.jpg" />
+    <Content Include="Webcontent\wp-content\uploads\sites\3\2017\12\shop-12-300x300.jpg" />
+    <Content Include="Webcontent\wp-content\uploads\sites\3\2017\12\shop-12-600x600.jpg" />
+    <Content Include="Webcontent\wp-content\uploads\sites\3\2017\12\shop-12-768x768.jpg" />
+    <Content Include="Webcontent\wp-content\uploads\sites\3\2017\12\shop-12-800x800.jpg" />
+    <Content Include="Webcontent\wp-content\uploads\sites\3\2017\12\shop-12.jpg" />
+    <Content Include="Webcontent\wp-content\uploads\sites\3\2018\02\01-1024x683.jpg" />
+    <Content Include="Webcontent\wp-content\uploads\sites\3\2018\02\01-300x200.jpg" />
+    <Content Include="Webcontent\wp-content\uploads\sites\3\2018\02\01-768x512.jpg" />
+    <Content Include="Webcontent\wp-content\uploads\sites\3\2018\02\01-800x508.jpg" />
+    <Content Include="Webcontent\wp-content\uploads\sites\3\2018\02\01-800x650.jpg" />
+    <Content Include="Webcontent\wp-content\uploads\sites\3\2018\02\01-800x715.jpg" />
+    <Content Include="Webcontent\wp-content\uploads\sites\3\2018\02\01-800x740.jpg" />
+    <Content Include="Webcontent\wp-content\uploads\sites\3\2018\02\01.jpg" />
+    <Content Include="Webcontent\wp-content\uploads\sites\3\2018\02\04-1024x683.jpg" />
+    <Content Include="Webcontent\wp-content\uploads\sites\3\2018\02\04-150x150.jpg" />
+    <Content Include="Webcontent\wp-content\uploads\sites\3\2018\02\04-300x200.jpg" />
+    <Content Include="Webcontent\wp-content\uploads\sites\3\2018\02\04-768x512.jpg" />
+    <Content Include="Webcontent\wp-content\uploads\sites\3\2018\02\04-800x508.jpg" />
+    <Content Include="Webcontent\wp-content\uploads\sites\3\2018\02\04-800x650.jpg" />
+    <Content Include="Webcontent\wp-content\uploads\sites\3\2018\02\04-800x715.jpg" />
+    <Content Include="Webcontent\wp-content\uploads\sites\3\2018\02\04-800x740.jpg" />
+    <Content Include="Webcontent\wp-content\uploads\sites\3\2018\02\04-800x800.jpg" />
+    <Content Include="Webcontent\wp-content\uploads\sites\3\2018\02\04.jpg" />
+    <Content Include="Webcontent\wp-content\uploads\sites\3\2018\02\06-1024x683.jpg" />
+    <Content Include="Webcontent\wp-content\uploads\sites\3\2018\02\06-300x200.jpg" />
+    <Content Include="Webcontent\wp-content\uploads\sites\3\2018\02\06-570x400.jpg" />
+    <Content Include="Webcontent\wp-content\uploads\sites\3\2018\02\06-768x512.jpg" />
+    <Content Include="Webcontent\wp-content\uploads\sites\3\2018\02\06-800x508.jpg" />
+    <Content Include="Webcontent\wp-content\uploads\sites\3\2018\02\06-800x650.jpg" />
+    <Content Include="Webcontent\wp-content\uploads\sites\3\2018\02\06-800x715.jpg" />
+    <Content Include="Webcontent\wp-content\uploads\sites\3\2018\02\06-800x740.jpg" />
+    <Content Include="Webcontent\wp-content\uploads\sites\3\2018\02\06.jpg" />
+    <Content Include="Webcontent\wp-content\uploads\sites\3\2018\02\07-1024x683.jpg" />
+    <Content Include="Webcontent\wp-content\uploads\sites\3\2018\02\07-300x200.jpg" />
+    <Content Include="Webcontent\wp-content\uploads\sites\3\2018\02\07-380x222.jpg" />
+    <Content Include="Webcontent\wp-content\uploads\sites\3\2018\02\07-570x400.jpg" />
+    <Content Include="Webcontent\wp-content\uploads\sites\3\2018\02\07-768x512.jpg" />
+    <Content Include="Webcontent\wp-content\uploads\sites\3\2018\02\07-800x650.jpg" />
+    <Content Include="Webcontent\wp-content\uploads\sites\3\2018\02\07-800x715.jpg" />
+    <Content Include="Webcontent\wp-content\uploads\sites\3\2018\02\07.jpg" />
+    <Content Include="Webcontent\wp-content\uploads\sites\3\2018\02\08-1024x683.jpg" />
+    <Content Include="Webcontent\wp-content\uploads\sites\3\2018\02\08-300x200.jpg" />
+    <Content Include="Webcontent\wp-content\uploads\sites\3\2018\02\08-768x512.jpg" />
+    <Content Include="Webcontent\wp-content\uploads\sites\3\2018\02\08-800x508.jpg" />
+    <Content Include="Webcontent\wp-content\uploads\sites\3\2018\02\08-800x650.jpg" />
+    <Content Include="Webcontent\wp-content\uploads\sites\3\2018\02\08-800x715.jpg" />
+    <Content Include="Webcontent\wp-content\uploads\sites\3\2018\02\08-800x740.jpg" />
+    <Content Include="Webcontent\wp-content\uploads\sites\3\2018\02\08.jpg" />
+    <Content Include="Webcontent\wp-content\uploads\sites\3\2018\02\09-1024x683.jpg" />
+    <Content Include="Webcontent\wp-content\uploads\sites\3\2018\02\09-150x150.jpg" />
+    <Content Include="Webcontent\wp-content\uploads\sites\3\2018\02\09-300x200.jpg" />
+    <Content Include="Webcontent\wp-content\uploads\sites\3\2018\02\09-768x512.jpg" />
+    <Content Include="Webcontent\wp-content\uploads\sites\3\2018\02\09-800x508.jpg" />
+    <Content Include="Webcontent\wp-content\uploads\sites\3\2018\02\09-800x740.jpg" />
+    <Content Include="Webcontent\wp-content\uploads\sites\3\2018\02\09-800x800.jpg" />
+    <Content Include="Webcontent\wp-content\uploads\sites\3\2018\02\09.jpg" />
+    <Content Include="Webcontent\wp-content\uploads\sites\3\2018\02\1.jpg" />
+    <Content Include="Webcontent\wp-content\uploads\sites\3\2018\02\10-1024x683.jpg" />
+    <Content Include="Webcontent\wp-content\uploads\sites\3\2018\02\10-300x200.jpg" />
+    <Content Include="Webcontent\wp-content\uploads\sites\3\2018\02\10-768x512.jpg" />
+    <Content Include="Webcontent\wp-content\uploads\sites\3\2018\02\10-800x508.jpg" />
+    <Content Include="Webcontent\wp-content\uploads\sites\3\2018\02\10-800x650.jpg" />
+    <Content Include="Webcontent\wp-content\uploads\sites\3\2018\02\10-800x715.jpg" />
+    <Content Include="Webcontent\wp-content\uploads\sites\3\2018\02\10-800x740.jpg" />
+    <Content Include="Webcontent\wp-content\uploads\sites\3\2018\02\10.jpg" />
+    <Content Include="Webcontent\wp-content\uploads\sites\3\2018\02\11-1024x683.jpg" />
+    <Content Include="Webcontent\wp-content\uploads\sites\3\2018\02\11-300x200.jpg" />
+    <Content Include="Webcontent\wp-content\uploads\sites\3\2018\02\11-380x222.jpg" />
+    <Content Include="Webcontent\wp-content\uploads\sites\3\2018\02\11-768x512.jpg" />
+    <Content Include="Webcontent\wp-content\uploads\sites\3\2018\02\11-800x508.jpg" />
+    <Content Include="Webcontent\wp-content\uploads\sites\3\2018\02\11-800x650.jpg" />
+    <Content Include="Webcontent\wp-content\uploads\sites\3\2018\02\11-800x715.jpg" />
+    <Content Include="Webcontent\wp-content\uploads\sites\3\2018\02\11-800x740.jpg" />
+    <Content Include="Webcontent\wp-content\uploads\sites\3\2018\02\11.jpg" />
+    <Content Include="Webcontent\wp-content\uploads\sites\3\2018\02\12-1024x683.jpg" />
+    <Content Include="Webcontent\wp-content\uploads\sites\3\2018\02\12-300x200.jpg" />
+    <Content Include="Webcontent\wp-content\uploads\sites\3\2018\02\12-768x512.jpg" />
+    <Content Include="Webcontent\wp-content\uploads\sites\3\2018\02\12-800x650.jpg" />
+    <Content Include="Webcontent\wp-content\uploads\sites\3\2018\02\12-800x715.jpg" />
+    <Content Include="Webcontent\wp-content\uploads\sites\3\2018\02\12.jpg" />
+    <Content Include="Webcontent\wp-content\uploads\sites\3\2018\02\14-1024x683.jpg" />
+    <Content Include="Webcontent\wp-content\uploads\sites\3\2018\02\14-150x150.jpg" />
+    <Content Include="Webcontent\wp-content\uploads\sites\3\2018\02\14-300x200.jpg" />
+    <Content Include="Webcontent\wp-content\uploads\sites\3\2018\02\14-768x512.jpg" />
+    <Content Include="Webcontent\wp-content\uploads\sites\3\2018\02\14-800x508.jpg" />
+    <Content Include="Webcontent\wp-content\uploads\sites\3\2018\02\14-800x650.jpg" />
+    <Content Include="Webcontent\wp-content\uploads\sites\3\2018\02\14-800x715.jpg" />
+    <Content Include="Webcontent\wp-content\uploads\sites\3\2018\02\14-800x740.jpg" />
+    <Content Include="Webcontent\wp-content\uploads\sites\3\2018\02\14-800x800.jpg" />
+    <Content Include="Webcontent\wp-content\uploads\sites\3\2018\02\14-80x70.jpg" />
+    <Content Include="Webcontent\wp-content\uploads\sites\3\2018\02\14.jpg" />
+    <Content Include="Webcontent\wp-content\uploads\sites\3\2018\02\15-1024x683.jpg" />
+    <Content Include="Webcontent\wp-content\uploads\sites\3\2018\02\15-300x200.jpg" />
+    <Content Include="Webcontent\wp-content\uploads\sites\3\2018\02\15-768x512.jpg" />
+    <Content Include="Webcontent\wp-content\uploads\sites\3\2018\02\15-800x508.jpg" />
+    <Content Include="Webcontent\wp-content\uploads\sites\3\2018\02\15-800x650.jpg" />
+    <Content Include="Webcontent\wp-content\uploads\sites\3\2018\02\15-800x715.jpg" />
+    <Content Include="Webcontent\wp-content\uploads\sites\3\2018\02\15-800x740.jpg" />
+    <Content Include="Webcontent\wp-content\uploads\sites\3\2018\02\15.jpg" />
+    <Content Include="Webcontent\wp-content\uploads\sites\3\2018\02\17-1024x683.jpg" />
+    <Content Include="Webcontent\wp-content\uploads\sites\3\2018\02\17-300x200.jpg" />
+    <Content Include="Webcontent\wp-content\uploads\sites\3\2018\02\17-768x512.jpg" />
+    <Content Include="Webcontent\wp-content\uploads\sites\3\2018\02\17-800x508.jpg" />
+    <Content Include="Webcontent\wp-content\uploads\sites\3\2018\02\17-800x650.jpg" />
+    <Content Include="Webcontent\wp-content\uploads\sites\3\2018\02\17-800x715.jpg" />
+    <Content Include="Webcontent\wp-content\uploads\sites\3\2018\02\17-800x740.jpg" />
+    <Content Include="Webcontent\wp-content\uploads\sites\3\2018\02\17.jpg" />
+    <Content Include="Webcontent\wp-content\uploads\sites\3\2018\02\18-380x222.jpg" />
+    <Content Include="Webcontent\wp-content\uploads\sites\3\2018\02\4.jpg" />
+    <Content Include="Webcontent\wp-content\uploads\sites\3\2018\02\5.jpg" />
+    <Content Include="Webcontent\wp-content\uploads\sites\3\2018\02\blogsingle-288x300.jpg" />
+    <Content Include="Webcontent\wp-content\uploads\sites\3\2018\02\blogsingle.jpg" />
+    <Content Include="Webcontent\wp-content\uploads\sites\3\2018\02\cataract.jpg" />
+    <Content Include="Webcontent\wp-content\uploads\sites\3\2018\02\eyeglass.jpg" />
+    <Content Include="Webcontent\wp-content\uploads\sites\3\2018\02\lasereye.jpg" />
+    <Content Include="Webcontent\wp-content\uploads\sites\3\2018\02\saibabareception.PNG" />
+    <Content Include="Webcontent\wp-content\uploads\sites\3\2018\03\img-03-150x150.jpg" />
+    <Content Include="Webcontent\wp-content\uploads\sites\3\2018\04\client-1.png" />
+    <Content Include="Webcontent\wp-content\uploads\sites\3\2018\04\client-2.png" />
+    <Content Include="Webcontent\wp-content\uploads\sites\3\2018\04\client-3.png" />
+    <Content Include="Webcontent\wp-content\uploads\sites\3\2018\04\client-4.png" />
+    <Content Include="Webcontent\wp-content\uploads\sites\3\2018\04\client-5.png" />
+    <Content Include="Webcontent\wp-content\uploads\sites\3\2018\04\client-6.png" />
+    <Content Include="Webcontent\wp-content\uploads\sites\3\2018\04\sliderimage-380x222.jpg" />
+    <Content Include="Webcontent\wp-content\uploads\sites\3\2018\05\01-226x300.jpg" />
+    <Content Include="Webcontent\wp-content\uploads\sites\3\2018\05\01-right-223x300.png" />
+    <Content Include="Webcontent\wp-content\uploads\sites\3\2018\05\01-right.png" />
+    <Content Include="Webcontent\wp-content\uploads\sites\3\2018\05\01.jpg" />
+    <Content Include="Webcontent\wp-content\uploads\sites\3\2018\05\1.jpg" />
+    <Content Include="Webcontent\wp-content\uploads\sites\3\2018\05\2.jpg" />
+    <Content Include="Webcontent\wp-content\uploads\sites\3\2018\05\drAshish.jpg" />
+    <Content Include="Webcontent\wp-content\uploads\sites\3\2018\05\drSangeetaBawankure.jpg" />
+    <Content Include="Webcontent\wp-content\uploads\sites\3\2018\05\drShamaliKohade.jpg" />
+    <Content Include="Webcontent\wp-content\uploads\sites\3\2018\05\drSonalVyas.jpg" />
+    <Content Include="Webcontent\wp-content\uploads\sites\3\2018\05\dummyDoc.png" />
+    <Content Include="Webcontent\wp-content\uploads\sites\3\2018\05\eyeglass.jpg" />
+    <Content Include="Webcontent\wp-content\uploads\sites\3\2018\05\img-01-new-150x150.png" />
+    <Content Include="Webcontent\wp-content\uploads\sites\3\2018\05\img-01-new-298x300.png" />
+    <Content Include="Webcontent\wp-content\uploads\sites\3\2018\05\img-01-new.png" />
+    <Content Include="Webcontent\wp-content\uploads\sites\3\2018\05\rachanadr.jpg" />
+    <Content Include="Webcontent\wp-content\uploads\sites\3\2018\05\skill-e1526259995485-150x150.png" />
+    <Content Include="Webcontent\wp-content\uploads\sites\3\2018\05\skill-e1526259995485-300x298.png" />
+    <Content Include="Webcontent\wp-content\uploads\sites\3\2018\05\skill-e1526259995485.png" />
+    <Content Include="Webcontent\wp-content\uploads\sites\3\2018\05\slider-3img-new.png" />
+    <Content Include="Webcontent\wp-content\uploads\sites\3\2018\05\slider-3img2.png" />
+    <Content Include="Webcontent\wp-content\uploads\sites\3\2018\05\slider-3img3.png" />
+    <Content Include="Webcontent\wp-content\uploads\sites\3\2018\05\srikadr.jpg" />
+    <Content Include="Webcontent\wp-content\uploads\sites\3\2018\05\swatidr.jpg" />
+    <Content Include="Webcontent\wp-content\uploads\sites\3\2018\05\teamimage1-600x785.jpg" />
+    <Content Include="Webcontent\wp-content\uploads\sites\3\2018\05\teamimage1.jpg" />
+    <Content Include="Webcontent\wp-content\uploads\sites\3\2018\05\teamimage2-600x785.jpg" />
+    <Content Include="Webcontent\wp-content\uploads\sites\3\2018\05\teamimage2-80x70.jpg" />
+    <Content Include="Webcontent\wp-content\uploads\sites\3\2018\05\teamimage2.jpg" />
+    <Content Include="Webcontent\wp-content\uploads\sites\3\2018\05\teamimage3-80x70.jpg" />
+    <Content Include="Webcontent\wp-content\uploads\sites\3\2018\05\teamimage3.jpg" />
+    <Content Include="Webcontent\wp-content\uploads\sites\3\2018\05\teamimage4-80x70.jpg" />
+    <Content Include="Webcontent\wp-content\uploads\sites\3\2018\05\teamimage4.jpg" />
+    <Content Include="Webcontent\wp-content\uploads\sites\3\2018\05\teamimage5-80x70.jpg" />
+    <Content Include="Webcontent\wp-content\uploads\sites\3\2018\05\teamimage5.jpg" />
+    <Content Include="Webcontent\wp-content\uploads\sites\3\2018\05\teamimage6.jpg" />
+    <Content Include="Webcontent\wp-content\uploads\sites\3\2018\05\ts-after-image1.jpg" />
+    <Content Include="Webcontent\wp-content\uploads\sites\3\2018\05\ts-after-image2-150x150.jpg" />
+    <Content Include="Webcontent\wp-content\uploads\sites\3\2018\05\ts-after-image2-800x800.jpg" />
+    <Content Include="Webcontent\wp-content\uploads\sites\3\2018\05\ts-after-image2.jpg" />
+    <Content Include="Webcontent\wp-content\uploads\sites\3\2018\05\ts-after-image3-150x150.jpg" />
+    <Content Include="Webcontent\wp-content\uploads\sites\3\2018\05\ts-after-image3-800x800.jpg" />
+    <Content Include="Webcontent\wp-content\uploads\sites\3\2018\05\ts-after-image3.jpg" />
+    <Content Include="Webcontent\wp-content\uploads\sites\3\2018\05\ts-after-image4.jpg" />
+    <Content Include="Webcontent\wp-content\uploads\sites\3\2018\05\ts-before-image1.jpg" />
+    <Content Include="Webcontent\wp-content\uploads\sites\3\2018\05\ts-before-image2.jpg" />
+    <Content Include="Webcontent\wp-content\uploads\sites\3\2018\05\ts-before-image3.jpg" />
+    <Content Include="Webcontent\wp-content\uploads\sites\3\2018\05\ts-before-image4.jpg" />
+    <Content Include="Webcontent\wp-content\uploads\sites\3\2018\05\womencare.jpg" />
+    <Content Include="Webcontent\wp-content\uploads\sites\3\2018\05\womencare2.jpg" />
+    <Content Include="Webcontent\wp-content\uploads\sites\3\2018\06\circle-backbg-2.png" />
+    <Content Include="Webcontent\wp-content\uploads\sites\3\2018\06\cropped-favicon-180x180.png" />
+    <Content Include="Webcontent\wp-content\uploads\sites\3\2018\06\cropped-favicon-192x192.png" />
+    <Content Include="Webcontent\wp-content\uploads\sites\3\2018\06\cropped-favicon-32x32.png" />
+    <Content Include="Webcontent\wp-content\uploads\sites\3\2018\06\logo-searchbg.png" />
+    <Content Include="Webcontent\wp-content\uploads\sites\3\2018\06\logo-white.png" />
+    <Content Include="Webcontent\wp-content\uploads\sites\3\2018\06\signature.png" />
+    <Content Include="Webcontent\wp-content\uploads\sites\3\2018\06\ts-after-image5.jpg.jpg" />
+    <Content Include="Webcontent\wp-content\uploads\sites\3\2018\06\ts-after-image6.jpg" />
+    <Content Include="Webcontent\wp-content\uploads\sites\3\2018\06\ts-before-image5.jpg" />
+    <Content Include="Webcontent\wp-content\uploads\sites\3\2018\06\ts-before-image6.jpg" />
+    <Content Include="Webcontent\wp-content\uploads\sites\3\revslider\slider-3\mainsiteslide02.jpg" />
+    <Content Include="Webcontent\wp-content\uploads\sites\3\revslider\slider-3\slide01.jpg" />
+    <Content Include="Webcontent\wp-includes\css\dist\block-library\style.min.css" />
+    <Content Include="Webcontent\wp-includes\js\comment-reply.min.js" />
+    <Content Include="Webcontent\wp-includes\js\jquery\jquery-migrate.min.js" />
+    <Content Include="Webcontent\wp-includes\js\jquery\jquery.js" />
+    <Content Include="Webcontent\wp-includes\js\jquery\ui\core.min.js" />
+    <Content Include="Webcontent\wp-includes\js\jquery\ui\datepicker.min.js" />
+    <Content Include="Webcontent\wp-includes\js\wp-embed.min.js" />
+    <Content Include="Webcontent\wp-includes\wlwmanifest.xml" />
+    <Content Include="Webcontent\wp-json\oembed\1.0\embed-1.xml" />
+    <Content Include="Webcontent\wp-json\oembed\1.0\embed-10.xml" />
+    <Content Include="Webcontent\wp-json\oembed\1.0\embed-11.xml" />
+    <Content Include="Webcontent\wp-json\oembed\1.0\embed-12.xml" />
+    <Content Include="Webcontent\wp-json\oembed\1.0\embed-13.xml" />
+    <Content Include="Webcontent\wp-json\oembed\1.0\embed-14.xml" />
+    <Content Include="Webcontent\wp-json\oembed\1.0\embed-15.xml" />
+    <Content Include="Webcontent\wp-json\oembed\1.0\embed-16.xml" />
+    <Content Include="Webcontent\wp-json\oembed\1.0\embed-17.xml" />
+    <Content Include="Webcontent\wp-json\oembed\1.0\embed-18.xml" />
+    <Content Include="Webcontent\wp-json\oembed\1.0\embed-19.xml" />
+    <Content Include="Webcontent\wp-json\oembed\1.0\embed-2.xml" />
+    <Content Include="Webcontent\wp-json\oembed\1.0\embed-20.xml" />
+    <Content Include="Webcontent\wp-json\oembed\1.0\embed-21.xml" />
+    <Content Include="Webcontent\wp-json\oembed\1.0\embed-22.xml" />
+    <Content Include="Webcontent\wp-json\oembed\1.0\embed-23.xml" />
+    <Content Include="Webcontent\wp-json\oembed\1.0\embed-24.xml" />
+    <Content Include="Webcontent\wp-json\oembed\1.0\embed-25.xml" />
+    <Content Include="Webcontent\wp-json\oembed\1.0\embed-26.xml" />
+    <Content Include="Webcontent\wp-json\oembed\1.0\embed-27.xml" />
+    <Content Include="Webcontent\wp-json\oembed\1.0\embed-28.xml" />
+    <Content Include="Webcontent\wp-json\oembed\1.0\embed-29.xml" />
+    <Content Include="Webcontent\wp-json\oembed\1.0\embed-3.xml" />
+    <Content Include="Webcontent\wp-json\oembed\1.0\embed-30.xml" />
+    <Content Include="Webcontent\wp-json\oembed\1.0\embed-31.xml" />
+    <Content Include="Webcontent\wp-json\oembed\1.0\embed-32.xml" />
+    <Content Include="Webcontent\wp-json\oembed\1.0\embed-33.xml" />
+    <Content Include="Webcontent\wp-json\oembed\1.0\embed-34.xml" />
+    <Content Include="Webcontent\wp-json\oembed\1.0\embed-35.xml" />
+    <Content Include="Webcontent\wp-json\oembed\1.0\embed-36.xml" />
+    <Content Include="Webcontent\wp-json\oembed\1.0\embed-37.xml" />
+    <Content Include="Webcontent\wp-json\oembed\1.0\embed-38.xml" />
+    <Content Include="Webcontent\wp-json\oembed\1.0\embed-39.xml" />
+    <Content Include="Webcontent\wp-json\oembed\1.0\embed-4.xml" />
+    <Content Include="Webcontent\wp-json\oembed\1.0\embed-40.xml" />
+    <Content Include="Webcontent\wp-json\oembed\1.0\embed-41.xml" />
+    <Content Include="Webcontent\wp-json\oembed\1.0\embed-42.xml" />
+    <Content Include="Webcontent\wp-json\oembed\1.0\embed-43.xml" />
+    <Content Include="Webcontent\wp-json\oembed\1.0\embed-44.xml" />
+    <Content Include="Webcontent\wp-json\oembed\1.0\embed-45.xml" />
+    <Content Include="Webcontent\wp-json\oembed\1.0\embed-46.xml" />
+    <Content Include="Webcontent\wp-json\oembed\1.0\embed-47.xml" />
+    <Content Include="Webcontent\wp-json\oembed\1.0\embed-48.xml" />
+    <Content Include="Webcontent\wp-json\oembed\1.0\embed-49.xml" />
+    <Content Include="Webcontent\wp-json\oembed\1.0\embed-5.xml" />
+    <Content Include="Webcontent\wp-json\oembed\1.0\embed-50.xml" />
+    <Content Include="Webcontent\wp-json\oembed\1.0\embed-51.xml" />
+    <Content Include="Webcontent\wp-json\oembed\1.0\embed-52.xml" />
+    <Content Include="Webcontent\wp-json\oembed\1.0\embed-53.xml" />
+    <Content Include="Webcontent\wp-json\oembed\1.0\embed-54.xml" />
+    <Content Include="Webcontent\wp-json\oembed\1.0\embed-55.xml" />
+    <Content Include="Webcontent\wp-json\oembed\1.0\embed-56.xml" />
+    <Content Include="Webcontent\wp-json\oembed\1.0\embed-57.xml" />
+    <Content Include="Webcontent\wp-json\oembed\1.0\embed-58.xml" />
+    <Content Include="Webcontent\wp-json\oembed\1.0\embed-6.xml" />
+    <Content Include="Webcontent\wp-json\oembed\1.0\embed-7.xml" />
+    <Content Include="Webcontent\wp-json\oembed\1.0\embed-8.xml" />
+    <Content Include="Webcontent\wp-json\oembed\1.0\embed-9.xml" />
+    <Content Include="Webcontent\wp-json\oembed\1.0\embed.xml" />
+    <None Include="Scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="Scripts\jquery-1.10.2.js" />
+    <Content Include="Scripts\jquery-1.10.2.min.js" />
+    <None Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\jquery.validate.js" />
+    <Content Include="Scripts\jquery.validate.min.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Scripts\modernizr-2.6.2.js" />
+    <Content Include="Scripts\respond.js" />
+    <Content Include="Scripts\respond.min.js" />
+    <Content Include="Scripts\_references.js" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Views\Web.config" />
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Shared\Error.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\Home\About.cshtml" />
+    <Content Include="Views\Home\Contact.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Scripts\jquery-1.10.2.min.map" />
+    <Content Include="Views\Account\_ChangePasswordPartial.cshtml" />
+    <Content Include="Views\Account\_ExternalLoginsListPartial.cshtml" />
+    <Content Include="Views\Account\_RemoveAccountPartial.cshtml" />
+    <Content Include="Views\Account\_SetPasswordPartial.cshtml" />
+    <Content Include="Views\Account\ExternalLoginConfirmation.cshtml" />
+    <Content Include="Views\Account\ExternalLoginFailure.cshtml" />
+    <Content Include="Views\Account\Login.cshtml" />
+    <Content Include="Views\Account\Manage.cshtml" />
+    <Content Include="Views\Account\Register.cshtml" />
+    <Content Include="Views\Shared\_LoginPartial.cshtml" />
+    <Content Include="Webcontent\2017\07\02\health-experts-advice-for-you\feed\index.rss" />
+    <Content Include="Webcontent\2017\07\02\steps-to-overcoming-teenage-anger\feed\index.rss" />
+    <Content Include="Webcontent\2017\07\05\domiciliary-optometry-in-the-united-kingdom\feed\index.rss" />
+    <Content Include="Webcontent\2017\07\06\perimetry-a-change-in-the-rate-of-progress\feed\index.rss" />
+    <Content Include="Webcontent\2017\08\09\how-much-protein-do-you-really-need\feed\index.rss" />
+    <Content Include="Webcontent\2017\08\10\electronic-vision-enhancement-for-low-vision\feed\index.rss" />
+    <Content Include="Webcontent\2017\08\13\a-general-practice-model-for-low-vision-lessons-learned-in-wales\feed\index.rss" />
+    <Content Include="Webcontent\2017\08\15\emerging-treatments-for-age-related-macular-degeneration\feed\index.rss" />
+    <Content Include="Webcontent\2017\09\22\dementia-and-optometry-a-growing-need\feed\index.rss" />
+    <Content Include="Webcontent\2017\09\23\how-much-do-you-really-need-in-a-day\feed\index.rss" />
+    <Content Include="Webcontent\2017\09\27\difference-between-an-ophthalmologist-optometrist-and-optician\feed\index.rss" />
+    <Content Include="Webcontent\2017\09\29\make-sure-your-childs-eyes-are-ready-for-school-and-activities\feed\index.rss" />
+    <Content Include="Webcontent\2018\01\21\signs-or-risk-factors-for-eye-disease\feed\index.rss" />
+    <Content Include="Webcontent\2018\02\18\thats-why-it-is-so-important-to-see-an-ophthalmologist\feed\index.rss" />
+    <Content Include="Webcontent\author\admin\feed\index.rss" />
+    <Content Include="Webcontent\category\eye-treatment\feed\index.rss" />
+    <Content Include="Webcontent\category\glaucoma\feed\index.rss" />
+    <Content Include="Webcontent\category\lasik\feed\index.rss" />
+    <Content Include="Webcontent\category\ocular\feed\index.rss" />
+    <Content Include="Webcontent\category\ophthalmology\feed\index.rss" />
+    <Content Include="Webcontent\category\paediatric\feed\index.rss" />
+    <Content Include="Webcontent\comments\feed\index.rss" />
+    <Content Include="Webcontent\feed\index.rss" />
+    <Content Include="Webcontent\optometrist-service-category\cataract-surgery\feed\index.rss" />
+    <Content Include="Webcontent\optometrist-service-category\corneal-surgery\feed\index.rss" />
+    <Content Include="Webcontent\optometrist-service-category\eye-treatment\feed\index.rss" />
+    <Content Include="Webcontent\optometrist-service-category\glaucoma-surgery\feed\index.rss" />
+    <Content Include="Webcontent\optometrist-service-category\laser-eye-surgery\feed\index.rss" />
+    <Content Include="Webcontent\optometrist-service-category\oculoplastic-surgery\feed\index.rss" />
+    <Content Include="Webcontent\optometrist-service-category\vision-correction\feed\index.rss" />
+    <Content Include="Webcontent\optometrist-service-category\vitreo-retinal-surgery\feed\index.rss" />
+    <Content Include="Webcontent\product-category\accessories\feed\index.rss" />
+    <Content Include="Webcontent\product-category\clothing\feed\index.rss" />
+    <Content Include="Webcontent\product-category\decor\feed\index.rss" />
+    <Content Include="Webcontent\product-category\hoodies\feed\index.rss" />
+    <Content Include="Webcontent\product-category\music\feed\index.rss" />
+    <Content Include="Webcontent\product-category\tshirts\feed\index.rss" />
+    <Content Include="Webcontent\product\album\feed\index.rss" />
+    <Content Include="Webcontent\product\beanie-with-logo\feed\index.rss" />
+    <Content Include="Webcontent\product\cap\feed\index.rss" />
+    <Content Include="Webcontent\product\hoodie-with-zipper\feed\index.rss" />
+    <Content Include="Webcontent\product\logo-collection\feed\index.rss" />
+    <Content Include="Webcontent\product\long-sleeve-tee\feed\index.rss" />
+    <Content Include="Webcontent\product\polo\feed\index.rss" />
+    <Content Include="Webcontent\product\single\feed\index.rss" />
+    <Content Include="Webcontent\product\sunglasses\feed\index.rss" />
+    <Content Include="Webcontent\product\t-shirt-with-logo\feed\index.rss" />
+    <Content Include="Webcontent\product\wordpress-pennant\feed\index.rss" />
+    <Content Include="Webcontent\shop\feed\index.rss" />
+    <Content Include="Webcontent\tag\geometrical\feed\index.rss" />
+    <Content Include="Webcontent\wp-content\plugins\booking-calendar\css\font-awesome\fonts\fontawesome-webfont-1.eot" />
+    <Content Include="Webcontent\wp-content\plugins\booking-calendar\css\font-awesome\fonts\fontawesome-webfont.eot" />
+    <Content Include="Webcontent\wp-content\plugins\booking-calendar\css\font-awesome\fonts\fontawesome-webfont.ttf" />
+    <Content Include="Webcontent\wp-content\plugins\booking-calendar\css\font-awesome\fonts\fontawesome-webfont.woff" />
+    <Content Include="Webcontent\wp-content\plugins\booking-calendar\css\font-awesome\fonts\fontawesome-webfont.woff2" />
+    <Content Include="Webcontent\wp-content\plugins\js_composer\assets\fonts\vc_grid\vc_grid_v1-1.eot" />
+    <Content Include="Webcontent\wp-content\plugins\js_composer\assets\fonts\vc_grid\vc_grid_v1.eot" />
+    <Content Include="Webcontent\wp-content\plugins\js_composer\assets\fonts\vc_grid\vc_grid_v1.ttf" />
+    <Content Include="Webcontent\wp-content\plugins\js_composer\assets\fonts\vc_grid\vc_grid_v1.woff" />
+    <Content Include="Webcontent\wp-content\plugins\js_composer\assets\fonts\vc_icons_v2\fonts\vcpb-plugin-icons.eot" />
+    <Content Include="Webcontent\wp-content\plugins\js_composer\assets\fonts\vc_icons_v2\fonts\vcpb-plugin-icons.ttf" />
+    <Content Include="Webcontent\wp-content\plugins\js_composer\assets\fonts\vc_icons_v2\fonts\vcpb-plugin-icons.woff" />
+    <Content Include="Webcontent\wp-content\plugins\js_composer\assets\lib\bower\flexslider\fonts\flexslider-icon-1.eot" />
+    <Content Include="Webcontent\wp-content\plugins\js_composer\assets\lib\bower\flexslider\fonts\flexslider-icon.eot" />
+    <Content Include="Webcontent\wp-content\plugins\js_composer\assets\lib\bower\flexslider\fonts\flexslider-icon.ttf" />
+    <Content Include="Webcontent\wp-content\plugins\js_composer\assets\lib\bower\flexslider\fonts\flexslider-icon.woff" />
+    <Content Include="Webcontent\wp-content\plugins\js_composer\assets\lib\bower\font-awesome\fonts\fontawesome-webfont-1.eot" />
+    <Content Include="Webcontent\wp-content\plugins\js_composer\assets\lib\bower\font-awesome\fonts\fontawesome-webfont.eot" />
+    <Content Include="Webcontent\wp-content\plugins\js_composer\assets\lib\bower\font-awesome\fonts\fontawesome-webfont.ttf" />
+    <Content Include="Webcontent\wp-content\plugins\js_composer\assets\lib\bower\font-awesome\fonts\fontawesome-webfont.woff" />
+    <Content Include="Webcontent\wp-content\plugins\js_composer\assets\lib\bower\font-awesome\fonts\fontawesome-webfont.woff2" />
+    <Content Include="Webcontent\wp-content\plugins\revslider\public\assets\fonts\font-awesome\fonts\fontawesome-webfont-1.eot" />
+    <Content Include="Webcontent\wp-content\plugins\revslider\public\assets\fonts\font-awesome\fonts\fontawesome-webfont.eot" />
+    <Content Include="Webcontent\wp-content\plugins\revslider\public\assets\fonts\font-awesome\fonts\fontawesome-webfont.ttf" />
+    <Content Include="Webcontent\wp-content\plugins\revslider\public\assets\fonts\font-awesome\fonts\fontawesome-webfont.woff" />
+    <Content Include="Webcontent\wp-content\plugins\revslider\public\assets\fonts\font-awesome\fonts\fontawesome-webfont.woff2" />
+    <Content Include="Webcontent\wp-content\plugins\revslider\public\assets\fonts\revicons\revicons.eot" />
+    <Content Include="Webcontent\wp-content\plugins\revslider\public\assets\fonts\revicons\revicons.ttf" />
+    <Content Include="Webcontent\wp-content\plugins\revslider\public\assets\fonts\revicons\revicons.woff" />
+    <Content Include="Webcontent\wp-content\plugins\woocommerce\assets\fonts\star-1.eot" />
+    <Content Include="Webcontent\wp-content\plugins\woocommerce\assets\fonts\star.eot" />
+    <Content Include="Webcontent\wp-content\plugins\woocommerce\assets\fonts\star.ttf" />
+    <Content Include="Webcontent\wp-content\plugins\woocommerce\assets\fonts\star.woff" />
+    <Content Include="Webcontent\wp-content\plugins\woocommerce\assets\fonts\WooCommerce-1.eot" />
+    <Content Include="Webcontent\wp-content\plugins\woocommerce\assets\fonts\WooCommerce.eot" />
+    <Content Include="Webcontent\wp-content\plugins\woocommerce\assets\fonts\WooCommerce.ttf" />
+    <Content Include="Webcontent\wp-content\plugins\woocommerce\assets\fonts\WooCommerce.woff" />
+    <Content Include="Webcontent\wp-content\themes\optico\libraries\slick\fonts\slick-1.eot" />
+    <Content Include="Webcontent\wp-content\themes\optico\libraries\slick\fonts\slick.eot" />
+    <Content Include="Webcontent\wp-content\themes\optico\libraries\slick\fonts\slick.ttf" />
+    <Content Include="Webcontent\wp-content\themes\optico\libraries\slick\fonts\slick.woff" />
+    <Content Include="Webcontent\wp-content\themes\optico\libraries\themify-icons\fonts\themify.eot" />
+    <Content Include="Webcontent\wp-content\themes\optico\libraries\themify-icons\fonts\themify.ttf" />
+    <Content Include="Webcontent\wp-content\themes\optico\libraries\themify-icons\fonts\themify.woff" />
+    <Content Include="Webcontent\wp-content\themes\optico\libraries\ts-optico-icons\font\ts-optico-icons.eot" />
+    <Content Include="Webcontent\wp-content\themes\optico\libraries\ts-optico-icons\font\ts-optico-icons.ttf" />
+    <Content Include="Webcontent\wp-content\themes\optico\libraries\ts-optico-icons\font\ts-optico-icons.woff" />
+    <Content Include="Webcontent\wp-content\themes\optico\libraries\ts-optico-icons\font\ts-optico-icons.woff2" />
+    <Content Include="Webcontent\wp-content\themes\optico\libraries\ts-optometrist-icons\font\Flaticon-1.eot" />
+    <Content Include="Webcontent\wp-content\themes\optico\libraries\ts-optometrist-icons\font\Flaticon.eot" />
+    <Content Include="Webcontent\wp-content\themes\optico\libraries\ts-optometrist-icons\font\Flaticon.ttf" />
+    <Content Include="Webcontent\wp-content\themes\optico\libraries\ts-optometrist-icons\font\Flaticon.woff" />
+    <Content Include="Webcontent\wp-json\index.json" />
+    <Content Include="Webcontent\wp-json\oembed\1.0\embed-1.json" />
+    <Content Include="Webcontent\wp-json\oembed\1.0\embed-10.json" />
+    <Content Include="Webcontent\wp-json\oembed\1.0\embed-11.json" />
+    <Content Include="Webcontent\wp-json\oembed\1.0\embed-12.json" />
+    <Content Include="Webcontent\wp-json\oembed\1.0\embed-13.json" />
+    <Content Include="Webcontent\wp-json\oembed\1.0\embed-14.json" />
+    <Content Include="Webcontent\wp-json\oembed\1.0\embed-15.json" />
+    <Content Include="Webcontent\wp-json\oembed\1.0\embed-16.json" />
+    <Content Include="Webcontent\wp-json\oembed\1.0\embed-17.json" />
+    <Content Include="Webcontent\wp-json\oembed\1.0\embed-18.json" />
+    <Content Include="Webcontent\wp-json\oembed\1.0\embed-19.json" />
+    <Content Include="Webcontent\wp-json\oembed\1.0\embed-2.json" />
+    <Content Include="Webcontent\wp-json\oembed\1.0\embed-20.json" />
+    <Content Include="Webcontent\wp-json\oembed\1.0\embed-21.json" />
+    <Content Include="Webcontent\wp-json\oembed\1.0\embed-22.json" />
+    <Content Include="Webcontent\wp-json\oembed\1.0\embed-23.json" />
+    <Content Include="Webcontent\wp-json\oembed\1.0\embed-24.json" />
+    <Content Include="Webcontent\wp-json\oembed\1.0\embed-25.json" />
+    <Content Include="Webcontent\wp-json\oembed\1.0\embed-26.json" />
+    <Content Include="Webcontent\wp-json\oembed\1.0\embed-27.json" />
+    <Content Include="Webcontent\wp-json\oembed\1.0\embed-28.json" />
+    <Content Include="Webcontent\wp-json\oembed\1.0\embed-29.json" />
+    <Content Include="Webcontent\wp-json\oembed\1.0\embed-3.json" />
+    <Content Include="Webcontent\wp-json\oembed\1.0\embed-30.json" />
+    <Content Include="Webcontent\wp-json\oembed\1.0\embed-31.json" />
+    <Content Include="Webcontent\wp-json\oembed\1.0\embed-32.json" />
+    <Content Include="Webcontent\wp-json\oembed\1.0\embed-33.json" />
+    <Content Include="Webcontent\wp-json\oembed\1.0\embed-34.json" />
+    <Content Include="Webcontent\wp-json\oembed\1.0\embed-35.json" />
+    <Content Include="Webcontent\wp-json\oembed\1.0\embed-36.json" />
+    <Content Include="Webcontent\wp-json\oembed\1.0\embed-37.json" />
+    <Content Include="Webcontent\wp-json\oembed\1.0\embed-38.json" />
+    <Content Include="Webcontent\wp-json\oembed\1.0\embed-39.json" />
+    <Content Include="Webcontent\wp-json\oembed\1.0\embed-4.json" />
+    <Content Include="Webcontent\wp-json\oembed\1.0\embed-40.json" />
+    <Content Include="Webcontent\wp-json\oembed\1.0\embed-41.json" />
+    <Content Include="Webcontent\wp-json\oembed\1.0\embed-42.json" />
+    <Content Include="Webcontent\wp-json\oembed\1.0\embed-43.json" />
+    <Content Include="Webcontent\wp-json\oembed\1.0\embed-44.json" />
+    <Content Include="Webcontent\wp-json\oembed\1.0\embed-45.json" />
+    <Content Include="Webcontent\wp-json\oembed\1.0\embed-46.json" />
+    <Content Include="Webcontent\wp-json\oembed\1.0\embed-47.json" />
+    <Content Include="Webcontent\wp-json\oembed\1.0\embed-48.json" />
+    <Content Include="Webcontent\wp-json\oembed\1.0\embed-49.json" />
+    <Content Include="Webcontent\wp-json\oembed\1.0\embed-5.json" />
+    <Content Include="Webcontent\wp-json\oembed\1.0\embed-50.json" />
+    <Content Include="Webcontent\wp-json\oembed\1.0\embed-51.json" />
+    <Content Include="Webcontent\wp-json\oembed\1.0\embed-52.json" />
+    <Content Include="Webcontent\wp-json\oembed\1.0\embed-53.json" />
+    <Content Include="Webcontent\wp-json\oembed\1.0\embed-54.json" />
+    <Content Include="Webcontent\wp-json\oembed\1.0\embed-55.json" />
+    <Content Include="Webcontent\wp-json\oembed\1.0\embed-56.json" />
+    <Content Include="Webcontent\wp-json\oembed\1.0\embed-57.json" />
+    <Content Include="Webcontent\wp-json\oembed\1.0\embed-58.json" />
+    <Content Include="Webcontent\wp-json\oembed\1.0\embed-6.json" />
+    <Content Include="Webcontent\wp-json\oembed\1.0\embed-7.json" />
+    <Content Include="Webcontent\wp-json\oembed\1.0\embed-8.json" />
+    <Content Include="Webcontent\wp-json\oembed\1.0\embed-9.json" />
+    <Content Include="Webcontent\wp-json\oembed\1.0\embed.json" />
+    <Content Include="Views\Home\Doctors.cshtml" />
+    <Content Include="Views\Home\Services.cshtml" />
+    <Content Include="Views\Shared\_LayoutWomen.cshtml" />
+    <Content Include="Views\WMain\Index.cshtml" />
+    <Content Include="Views\WMain\WAbout.cshtml" />
+    <Content Include="Views\WMain\Doctors.cshtml" />
+    <Content Include="Views\WMain\Services.cshtml" />
+    <Content Include="Views\WMain\Contact.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="packages.config" />
+    <None Include="Project_Readme.html" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <Target Name="MvcBuildViews" AfterTargets="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(WebProjectOutputDir)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>9979</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:9979/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target> -->
+</Project>

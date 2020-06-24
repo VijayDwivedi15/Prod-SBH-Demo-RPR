@@ -1,0 +1,1 @@
+﻿optico.themestek.com/demo2/wp-content/plugins/revslider/public/assets/js/extensions/revolution.extension.navigation.min.js
